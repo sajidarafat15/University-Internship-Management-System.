@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InternEase - Workplace Tasks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-header">InternEase (Sup.)</div>
+        <ul class="sidebar-menu">
+            <li class=""><a href="supervisor-dashboard.html">Dashboard</a></li>
+            <li class=""><a href="supervisor-interns.html">Assigned Interns</a></li>
+            <li class="active"><a href="supervisor-tasks.html">Workplace Tasks</a></li>
+            <li class=""><a href="supervisor-reports.html">Weekly Reports</a></li>
+            <li class=""><a href="supervisor-evaluation.html">Final Evaluation</a></li>
+            <li class=""><a href="supervisor-profile.html">Profile Settings</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="topbar">
+            <h2>Workplace Task Assignment</h2>
+            <div class="user-profile" id="welcomeText">Welcome, Mr. Robert</div>
+        </div>
+        <div class="container">
+
+            <h1 class="page-title">Workplace Tasks</h1>
+            <p class="page-description">Assign tasks to interns and check their progress.</p>
+
+            <form id="taskForm">
+                <fieldset>
+                    <legend>Assign New Task</legend>
+                    <table class="form-table">
+                        <tr>
+                            <td><label for="taskIntern">Select Intern:</label></td>
+                            <td>
+                                <select id="taskIntern" name="taskIntern" required>
+                                    <option value="">-- Select Intern --</option>
+                                    <option value="MD. Sajid Arafat">MD. Sajid Arafat (23-53526-3)</option>
+                                    <option value="S.M Tajwar Tahmid">S.M Tajwar Tahmid (23-54828-3)</option>
+                                    <option value="Mohammad Tahmedul Haque Rafid">Mohammad Tahmedul Haque Rafid (23-53673-3)</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="taskTitle">Task Title:</label></td>
+                            <td><input type="text" id="taskTitle" name="taskTitle"
+                                       placeholder="Enter task title" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="taskDescription">Task Description:</label></td>
+                            <td><textarea id="taskDescription" name="taskDescription"
+                                          rows="4" placeholder="Write task details and quality standards"
+                                          required></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><label for="taskDeadline">Deadline:</label></td>
+                            <td><input type="date" id="taskDeadline" name="taskDeadline" required></td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <div class="button-row">
+                    <input type="submit" value="Assign Task">
+                    <input type="reset" value="Reset">
+                </div>
+                <div class="message" id="taskMessage"></div>
+            </form>
+
+            <h3>Assigned Tasks List</h3>
+            <table class="data-table" id="taskTable">
+                <caption>Task Records</caption>
+                <thead>
+                    <tr>
+                        <th>Task Title</th>
+                        <th>Assigned To</th>
+                        <th>Deadline</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>REST API Endpoint Integration</td>
+                        <td>S.M Tajwar Tahmid</td>
+                        <td>2026-06-10</td>
+                        <td class="status-active">In Progress</td>
+                        <td><button type="button" class="statusButton btn-secondary">Update Status</button></td>
+                    </tr>
+                    <tr>
+                        <td>Dashboard UI Wireframing</td>
+                        <td>MD. Sajid Arafat</td>
+                        <td>2026-06-05</td>
+                        <td class="status-completed">Completed</td>
+                        <td><button type="button" class="statusButton btn-secondary">Update Status</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="supervisor.js"></script>
+</body>
+</html>
