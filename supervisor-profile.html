@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InternEase - Supervisor Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-header">InternEase (Sup.)</div>
+        <ul class="sidebar-menu">
+            <li class=""><a href="supervisor-dashboard.html">Dashboard</a></li>
+            <li class=""><a href="supervisor-interns.html">Assigned Interns</a></li>
+            <li class=""><a href="supervisor-tasks.html">Workplace Tasks</a></li>
+            <li class=""><a href="supervisor-reports.html">Weekly Reports</a></li>
+            <li class=""><a href="supervisor-evaluation.html">Final Evaluation</a></li>
+            <li class="active"><a href="supervisor-profile.html">Profile Settings</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="topbar">
+            <h2>Profile Settings</h2>
+            <div class="user-profile" id="welcomeText">Welcome, Mr. Robert</div>
+        </div>
+        <div class="container">
+
+            <h1 class="page-title">Profile Settings</h1>
+            <p class="page-description">Update your supervisor contact information.</p>
+
+            <form id="profileForm">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <table class="form-table">
+                        <tr>
+                            <td><label for="supervisorName">Full Name:</label></td>
+                            <td><input type="text" id="supervisorName" name="supervisorName"
+                                       value="Mr. Robert Fox" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="supervisorEmail">Email Address:</label></td>
+                            <td><input type="email" id="supervisorEmail" name="supervisorEmail"
+                                       value="robert.supervisor@company.com" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="supervisorPhone">Contact Number:</label></td>
+                            <td><input type="text" id="supervisorPhone" name="supervisorPhone"
+                                       value="+8801811223344" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="newPassword">New Password:</label></td>
+                            <td><input type="password" id="newPassword" name="newPassword"
+                                       placeholder="Leave blank to keep current password"></td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <input type="submit" value="Save Changes">
+                <input type="reset" value="Reset">
+                <div class="message" id="profileMessage"></div>
+            </form>
+        </div>
+    </div>
+    <script src="supervisor.js"></script>
+</body>
+</html>

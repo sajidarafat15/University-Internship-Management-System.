@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InternEase - Weekly Reports</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-header">InternEase (Sup.)</div>
+        <ul class="sidebar-menu">
+            <li class=""><a href="supervisor-dashboard.html">Dashboard</a></li>
+            <li class=""><a href="supervisor-interns.html">Assigned Interns</a></li>
+            <li class=""><a href="supervisor-tasks.html">Workplace Tasks</a></li>
+            <li class="active"><a href="supervisor-reports.html">Weekly Reports</a></li>
+            <li class=""><a href="supervisor-evaluation.html">Final Evaluation</a></li>
+            <li class=""><a href="supervisor-profile.html">Profile Settings</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="topbar">
+            <h2>Intern Weekly Progress Reports</h2>
+            <div class="user-profile" id="welcomeText">Welcome, Mr. Robert</div>
+        </div>
+        <div class="container">
+
+            <h1 class="page-title">Weekly Reports</h1>
+            <p class="page-description">Review intern reports and provide feedback.</p>
+
+            <table class="data-table" id="reportTable">
+                <caption>Submitted Weekly Reports</caption>
+                <thead>
+                    <tr>
+                        <th>Intern Name</th>
+                        <th>Week No.</th>
+                        <th>Summary of Activities</th>
+                        <th>Logbook File</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>MD. Sajid Arafat</td>
+                        <td>Week 3</td>
+                        <td>Worked on responsive layouts and CSS grids.</td>
+                        <td><span class="small-note">No file attached</span></td>
+                        <td class="status-pending">Pending Review</td>
+                        <td><button type="button" class="reviewButton">Mark Reviewed</button></td>
+                    </tr>
+                    <tr>
+                        <td>S.M Tajwar Tahmid</td>
+                        <td>Week 2</td>
+                        <td>Integrated backend database endpoints.</td>
+                        <td><span class="small-note">No file attached</span></td>
+                        <td class="status-completed">Reviewed</td>
+                        <td><button type="button" class="reviewButton btn-secondary">Update Status</button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <form id="feedbackForm">
+                <fieldset>
+                    <legend>Provide Report Feedback</legend>
+                    <table class="form-table">
+                        <tr>
+                            <td><label for="feedbackIntern">Select Intern:</label></td>
+                            <td>
+                                <select id="feedbackIntern" name="feedbackIntern" required>
+                                    <option value="">-- Select Intern --</option>
+                                    <option value="MD. Sajid Arafat">MD. Sajid Arafat</option>
+                                    <option value="S.M Tajwar Tahmid">S.M Tajwar Tahmid</option>
+                                    <option value="Mohammad Tahmedul Haque Rafid">Mohammad Tahmedul Haque Rafid</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="reportWeek">Week Number:</label></td>
+                            <td><input type="number" id="reportWeek" name="reportWeek"
+                                       min="1" max="24" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="reportFeedback">Supervisor Feedback:</label></td>
+                            <td><textarea id="reportFeedback" name="reportFeedback" rows="4"
+                                          placeholder="Write your feedback here" required></textarea></td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <input type="submit" value="Submit Feedback">
+                <input type="reset" value="Reset">
+                <div class="message" id="feedbackMessage"></div>
+            </form>
+
+            <h3>Feedback History</h3>
+            <table class="data-table" id="feedbackTable">
+                <thead>
+                    <tr>
+                        <th>Intern Name</th>
+                        <th>Week</th>
+                        <th>Feedback</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="supervisor.js"></script>
+</body>
+</html>
