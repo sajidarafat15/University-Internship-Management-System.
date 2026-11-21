@@ -14,6 +14,26 @@ let activeInternships = parseInt(overviewCards[1].textContent);
 let draftInternships = parseInt(overviewCards[2].textContent);
 let closedInternships = parseInt(overviewCards[3].textContent);
 
+// PROFILE DROPDOWN
+let profileButton = document.getElementById("profileButton");
+let profileDropdown = document.getElementById("profileDropdown");
+
+if (profileButton != null && profileDropdown != null) {
+
+    profileButton.addEventListener("click", function(event) {
+        event.stopPropagation();
+        profileDropdown.classList.toggle("show");
+    });
+
+    document.addEventListener("click", function(event) {
+        if (!profileDropdown.contains(event.target) &&
+            !profileButton.contains(event.target)) {
+
+            profileDropdown.classList.remove("show");
+        }
+    });
+}
+
 // SEARCH AND FILTER INTERNSHIPS
 function filterInternships() {
     let search = searchInput.value.toLowerCase();
@@ -25,23 +45,19 @@ function filterInternships() {
         let title = internshipCards[i].querySelector(".job-title h3").textContent.toLowerCase();
         let cardDepartment = internshipCards[i].querySelector(".job-title p").textContent.toLowerCase();
         let cardStatus = internshipCards[i].querySelector(".status").textContent.toLowerCase();
-
         if (cardDepartment.includes("creative")) {
             cardDepartment = "design department";
         }
-
         if (title.includes(search) &&
             (status == "" || cardStatus.includes(status.toLowerCase())) &&
             (department == "" || cardDepartment.includes(department.toLowerCase()))) {
 
             internshipCards[i].style.display = "";
             count++;
-
         } else {
             internshipCards[i].style.display = "none";
         }
     }
-
     document.querySelector(".total-tag").textContent = "Showing " + count + " Internships";
 }
 
@@ -64,10 +80,8 @@ function createInternship(status) {
     let stipend = formInputs[6].value;
     let deadline = formInputs[7].value;
     let skills = formInputs[10].value;
-
     let icon = "💼";
     let iconClass = "software";
-
     if (department == "Design") {
         icon = "🎨";
         iconClass = "design";
@@ -78,7 +92,6 @@ function createInternship(status) {
 
     let statusClass = "active-status";
     let statusText = "● Active";
-
     if (status == "Draft") {
         statusClass = "draft-status";
         statusText = "● Draft";
@@ -87,7 +100,6 @@ function createInternship(status) {
 
     let skillList = skills.split(",");
     let skillHTML = "";
-
     for (let i = 0; i < skillList.length; i++) {
         if (skillList[i].trim() != "") {
             skillHTML += "<span>" + skillList[i].trim() + "</span>";
@@ -98,7 +110,6 @@ function createInternship(status) {
     card.className = "internship-card";
     card.setAttribute("data-status", status);
     card.setAttribute("data-department", department);
-
     card.innerHTML = `
         <div class="job-top">
             <div class="job-icon ${iconClass}">${icon}</div>
@@ -108,16 +119,13 @@ function createInternship(status) {
             </div>
             <span class="status ${statusClass}">${statusText}</span>
         </div>
-
         <div class="job-details">
             <span>💼 ${employment}</span>
             <span>📍 ${location}</span>
             <span>⏱ ${duration}</span>
             <span>👥 ${vacancies} Vacancies</span>
         </div>
-
         <div class="job-tags">${skillHTML}</div>
-
         <div class="job-bottom">
             <div class="job-stats">
                 <div>
@@ -140,19 +148,14 @@ function createInternship(status) {
             </div>
         </div>
     `;
-
     document.querySelector(".internship-list").appendChild(card);
-
     internshipCards = document.querySelectorAll(".internship-card");
-
     totalInternships++;
-
     if (status == "Draft") {
         draftInternships++;
     } else {
         activeInternships++;
     }
-
     updateStatistics();
     filterInternships();
 }
@@ -173,7 +176,6 @@ function saveInternship() {
 function publishInternship() {
     let requiredFields = [0, 1, 2, 3, 4, 5, 7, 9, 10];
     let valid = true;
-
     for (let i = 0; i < requiredFields.length; i++) {
         let field = formInputs[requiredFields[i]];
 
@@ -184,7 +186,6 @@ function publishInternship() {
             break;
         }
     }
-
     if (valid) {
         createInternship("Active");
         alert("Internship published successfully!");
@@ -201,10 +202,8 @@ function resetForm() {
 searchInput.addEventListener("keyup", filterInternships);
 filterOptions[0].addEventListener("change", filterInternships);
 filterOptions[1].addEventListener("change", filterInternships);
-
 saveButton.addEventListener("click", saveInternship);
 resetButton.addEventListener("click", resetForm);
-
 createForm.addEventListener("submit", function(event) {
     event.preventDefault();
     publishInternship();

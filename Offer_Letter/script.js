@@ -8,10 +8,29 @@ let deadlineInput = document.getElementById("deadline");
 let stipendInput = document.getElementById("stipend");
 let fileInput = document.getElementById("offer-file");
 let notesInput = document.getElementById("notes");
-
 let offerTable = document.querySelector("tbody");
 let draftButton = document.querySelector(".btn-draft");
 let resetButton = document.querySelector(".btn-reset");
+
+// PROFILE DROPDOWN
+let profileButton = document.getElementById("profileButton");
+let profileDropdown = document.getElementById("profileDropdown");
+
+if (profileButton != null && profileDropdown != null) {
+
+    profileButton.addEventListener("click", function(event) {
+        event.stopPropagation();
+        profileDropdown.classList.toggle("show");
+    });
+
+    document.addEventListener("click", function(event) {
+        if (!profileDropdown.contains(event.target) &&
+            !profileButton.contains(event.target)) {
+
+            profileDropdown.classList.remove("show");
+        }
+    });
+}
 
 // UPDATE OFFER STATISTICS
 function updateStatistics() {
@@ -24,21 +43,17 @@ function updateStatistics() {
     for (let i = 0; i < rows.length; i++) {
         let status = rows[i].querySelector(".status").textContent;
         let documents = rows[i].querySelector(".document-status").textContent;
-
         if (status == "Sent" || status == "Signed" ||
             status == "Completed" || status == "Pending Documents") {
             sent++;
         }
-
         if (documents == "Pending") {
             awaiting++;
         }
-
         if (status == "Completed") {
             completed++;
         }
     }
-
     let stats = document.querySelectorAll(".stats-grid .stat-card h2");
     stats[0].textContent = total;
     stats[1].textContent = sent;
@@ -51,11 +66,9 @@ function updateStatistics() {
 // UPDATE OFFER PROGRESS
 function updateProgress(sent, completed, total) {
     let percentage = 0;
-
     if (total > 0) {
         percentage = Math.round((sent / total) * 100);
     }
-
     document.querySelector(".progress-number").textContent = percentage + "%";
     document.querySelector(".progress-fill").style.width = percentage + "%";
 
@@ -68,10 +81,8 @@ function updateProgress(sent, completed, total) {
 function saveOffer(status) {
     let candidate = candidateInput.options[candidateInput.selectedIndex].text;
     let position = positionInput.value;
-
     let rows = offerTable.querySelectorAll("tr");
     let selectedRow = null;
-
     for (let i = 0; i < rows.length; i++) {
         let name = rows[i].querySelector(".candidate-cell strong").textContent;
 
@@ -85,7 +96,6 @@ function saveOffer(status) {
     let statusClass = "draft";
     let documentText = "Not Started";
     let documentClass = "waiting";
-
     if (status == "Sent") {
         let today = new Date();
         let options = {
@@ -93,7 +103,6 @@ function saveOffer(status) {
             month: "short",
             year: "numeric"
         };
-
         date = today.toLocaleDateString("en-GB");
         statusClass = "sent";
         documentText = "Pending";
@@ -103,7 +112,6 @@ function saveOffer(status) {
     if (selectedRow == null) {
         let words = candidate.split(" ");
         let initials = "";
-
         for (let i = 0; i < words.length; i++) {
             if (words[i] != "") {
                 initials += words[i][0];
@@ -121,7 +129,6 @@ function saveOffer(status) {
             '<td><span class="status ' + statusClass + '">' + status + '</span></td>' +
             '<td><span class="document-status ' + documentClass + '">' +
             documentText + '</span></td>';
-
         offerTable.appendChild(selectedRow);
     } else {
         let cells = selectedRow.querySelectorAll("td");
@@ -137,10 +144,8 @@ function saveOffer(status) {
         documentBadge.textContent = documentText;
         documentBadge.className = "document-status " + documentClass;
     }
-
     updateStatistics();
     offerForm.reset();
-
     if (status == "Draft") {
         alert("Offer letter saved as draft!");
     } else {
@@ -154,14 +159,12 @@ function saveDraft() {
         alert("Please select a candidate and internship position.");
         return;
     }
-
     saveOffer("Draft");
 }
 
 // SEND OFFER LETTER
 function sendOffer(event) {
     event.preventDefault();
-
     if (candidateInput.value == "" ||
         positionInput.value == "" ||
         durationInput.value == "" ||
@@ -172,14 +175,11 @@ function sendOffer(event) {
         alert("Please complete all required fields.");
         return;
     }
-
     let file = fileInput.value.toLowerCase();
-
     if (!file.endsWith(".pdf")) {
         alert("Please upload a PDF file.");
         return;
     }
-
     let deadline = new Date(deadlineInput.value);
     let joiningDate = new Date(startDateInput.value);
 
@@ -187,7 +187,6 @@ function sendOffer(event) {
         alert("Acceptance deadline must be before the joining date.");
         return;
     }
-
     saveOffer("Sent");
 }
 

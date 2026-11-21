@@ -16,7 +16,7 @@
             <span class="menu-symbol">☰</span>
             <span>Menu</span>
         </label>
-        <a href="index.html" class="logo">Intern<span>Ease</span></a>
+        <a href="./Index.html" class="logo">Intern<span>Ease</span></a>
     </div>
 
     <div class="header-right">
@@ -24,7 +24,22 @@
             <span class="company-label">COMPANY ACCOUNT</span>
             <span class="company-name">Ollyo</span>
         </div>
-        <div class="profile-icon">O</div>
+
+        <div class="profile-menu">
+            <button type="button" class="profile-icon" id="profileButton">O</button>
+
+            <div class="profile-dropdown" id="profileDropdown">
+                <div class="dropdown-header">
+                    <strong>Ollyo</strong>
+                    <span>Company Representative</span>
+                </div>
+
+                <!-- CORRECTED PROFILE LINKS -->
+                <a href="./My%20Profile.html">My Profile</a>
+                <a href="./Account%20Settings.html">Account Settings</a>
+                <a href="../Logout/index.html">Logout</a>
+            </div>
+        </div>
     </div>
 
     <label for="menu-toggle" class="menu-overlay"></label>
@@ -38,7 +53,7 @@
             <label for="menu-toggle" class="close-button">×</label>
         </div>
 
-        <a href="index.html" class="active"><span class="nav-icon">⌂</span>Dashboard</a>
+        <a href="./Index.html" class="active"><span class="nav-icon">⌂</span>Dashboard</a>
         <a href="../Company_Profile/index.html"><span class="nav-icon">▣</span>Company Profile & Verification</a>
         <a href="../Internship_Management/index.html"><span class="nav-icon">▤</span>Internship Management</a>
         <a href="../Applications/index.html"><span class="nav-icon">▧</span>Applications & CV Review</a>
@@ -330,6 +345,7 @@
     <p>© 2026 InternEase. Company Representative Portal.</p>
     <p>Powered by InternEase</p>
 </footer>
+
 <script src="script.js"></script>
 </body>
 </html>

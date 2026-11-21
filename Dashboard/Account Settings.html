@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Settings | InternEase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <input type="checkbox" id="menu-toggle">
+
+        <div class="header-left">
+
+            <label for="menu-toggle" class="menu-button">
+                <span class="menu-symbol">☰</span>
+                Menu
+            </label>
+
+            <a href="Index.html" class="logo">Intern<span>Ease</span></a>
+        </div>
+
+        <div class="header-right">
+
+            <div class="company-info">
+                <span class="company-label">COMPANY ACCOUNT</span>
+                <strong class="company-name">Ollyo</strong>
+            </div>
+
+            <div class="profile-menu">
+                <button type="button" class="profile-icon" id="profileButton">O</button>
+
+                <div class="profile-dropdown" id="profileDropdown">
+                    <div class="dropdown-header">
+                        <strong>Ollyo</strong>
+                        <span>Company Representative</span>
+                    </div>
+
+                    <a href="Index.html">Dashboard</a>
+                    <a href="My Profile.html">My Profile</a>
+                    <a href="Account Settings.html" class="active">Account Settings</a>
+                    <a href="../Logout/index.html" class="logout-link">Log Out</a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- POP-UP MENU -->
+        <nav class="popup-menu">
+
+            <div class="menu-heading">
+                <div>
+                    <a href="Index.html" class="logo">Intern<span>Ease</span></a>
+                    <h3>Company Portal</h3>
+                </div>
+
+                <label for="menu-toggle" class="close-button">×</label>
+            </div>
+
+            <p class="menu-small">COMPANY REPRESENTATIVE</p>
+
+            <a href="Index.html">
+                <span class="nav-icon">▦</span>
+                Dashboard
+            </a>
+
+            <a href="../Company_Profile/index.html">
+                <span class="nav-icon">▣</span>
+                Company Profile & Verification
+            </a>
+
+            <a href="../Internship_Management/index.html">
+                <span class="nav-icon">▤</span>
+                Internship Management
+            </a>
+
+            <a href="../Applications/index.html">
+                <span class="nav-icon">▧</span>
+                Applications & CV Review
+            </a>
+
+            <a href="../Candidate_Selection/index.html">
+                <span class="nav-icon">♙</span>
+                Candidate Selection
+            </a>
+
+            <a href="../Offer_Letter/index.html">
+                <span class="nav-icon">✉</span>
+                Offer Letter Management
+            </a>
+
+            <a href="../Supervisor_Management/index.html">
+                <span class="nav-icon">♙</span>
+                Company Supervisor Management
+            </a>
+
+            <div class="menu-footer">
+                <span>COMPANY ACCOUNT</span>
+                <strong>Ollyo</strong>
+            </div>
+
+        </nav>
+
+
+        <!-- MENU OVERLAY -->
+        <label for="menu-toggle" class="menu-overlay"></label>
+
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="dashboard">
+
+        <!-- PAGE HEADING -->
+        <section class="page-heading">
+
+            <div>
+                <p class="eyebrow">COMPANY ACCOUNT</p>
+                <h1>Account Settings</h1>
+
+                <p class="page-description">
+                    Manage your account information, security and preferences.
+                </p>
+            </div>
+
+            <div class="date-badge">
+                <span class="date-dot"></span>
+                Account Preferences
+            </div>
+
+        </section>
+
+
+        <!-- SETTINGS CONTENT -->
+        <div class="lower-section">
+
+            <div class="main-content">
+
+                <form id="settingsForm" class="settings-form">
+
+                    <!-- ACCOUNT INFORMATION -->
+                    <section class="panel">
+
+                        <div class="panel-heading">
+                            <h2>Account Information</h2>
+                            <span class="view-all">ACCOUNT DETAILS</span>
+                        </div>
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+                                <label for="companyName">Company Name</label>
+                                <input type="text" id="companyName" value="Ollyo" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="accountRole">Account Role</label>
+                                <input type="text" id="accountRole" value="Company Representative" readonly>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="accountEmail">Account Email</label>
+                                <input type="email" id="accountEmail" placeholder="Enter account email" required>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- PASSWORD AND SECURITY -->
+                    <section class="panel">
+
+                        <div class="panel-heading">
+                            <h2>Password & Security</h2>
+                            <span class="view-all">SECURITY</span>
+                        </div>
+
+                        <div class="form-grid">
+
+                            <div class="form-group full-width">
+                                <label for="currentPassword">Current Password</label>
+                                <input type="password" id="currentPassword" placeholder="Enter current password">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="newPassword">New Password</label>
+                                <input type="password" id="newPassword" placeholder="Enter new password">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="confirmPassword">Confirm New Password</label>
+                                <input type="password" id="confirmPassword" placeholder="Confirm new password">
+                            </div>
+
+                            <p class="field-note full-width">
+                                Use at least 6 characters for your new password.
+                            </p>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- NOTIFICATION SETTINGS -->
+                    <section class="panel">
+
+                        <div class="panel-heading">
+                            <h2>Notification Settings</h2>
+                            <span class="view-all">PREFERENCES</span>
+                        </div>
+
+                        <div class="settings-list">
+
+                            <div class="setting-item">
+                                <div>
+                                    <strong>Email Notifications</strong>
+                                    <p>Receive important updates through email.</p>
+                                </div>
+
+                                <label class="switch">
+                                    <input type="checkbox" id="emailNotifications" checked>
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+
+                            <div class="setting-item">
+                                <div>
+                                    <strong>Application Updates</strong>
+                                    <p>Get notified when students submit applications.</p>
+                                </div>
+
+                                <label class="switch">
+                                    <input type="checkbox" id="applicationNotifications" checked>
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+
+                            <div class="setting-item">
+                                <div>
+                                    <strong>Internship Alerts</strong>
+                                    <p>Receive updates about your internship postings.</p>
+                                </div>
+
+                                <label class="switch">
+                                    <input type="checkbox" id="internshipNotifications">
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- PRIVACY SETTINGS -->
+                    <section class="panel">
+
+                        <div class="panel-heading">
+                            <h2>Privacy Settings</h2>
+                            <span class="view-all">PRIVACY</span>
+                        </div>
+
+                        <div class="settings-list">
+
+                            <div class="setting-item">
+                                <div>
+                                    <strong>Public Company Profile</strong>
+                                    <p>Allow students to view your company profile.</p>
+                                </div>
+
+                                <label class="switch">
+                                    <input type="checkbox" id="publicProfile" checked>
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+
+                            <div class="setting-item">
+                                <div>
+                                    <strong>Display Contact Information</strong>
+                                    <p>Allow students to view your company contact details.</p>
+                                </div>
+
+                                <label class="switch">
+                                    <input type="checkbox" id="displayContact">
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- FORM ACTIONS -->
+                    <div class="form-actions">
+
+                        <button type="button" class="btn btn-reset" id="resetSettings">
+                            Reset Changes
+                        </button>
+
+                        <button type="button" class="btn btn-save" id="saveSettings">
+                            Save Changes
+                        </button>
+
+                    </div>
+
+                    <p id="settingsMessage"></p>
+
+                </form>
+
+            </div>
+
+
+            <!-- SIDEBAR -->
+            <aside class="sidebar">
+
+                <!-- ACCOUNT OVERVIEW -->
+                <section class="panel">
+
+                    <div class="panel-heading">
+                        <h2>Account Overview</h2>
+                    </div>
+
+                    <div class="account-summary">
+
+                        <div class="summary-avatar">O</div>
+
+                        <h3>Ollyo</h3>
+                        <p>Company Representative</p>
+
+                        <span class="status accepted">Active Account</span>
+
+                    </div>
+
+                    <div class="account-item">
+                        <span>Account Type</span>
+                        <strong>Company</strong>
+                    </div>
+
+                    <div class="account-item">
+                        <span>Platform</span>
+                        <strong>InternEase</strong>
+                    </div>
+
+                </section>
+
+
+                <!-- SECURITY GUIDELINES -->
+                <section class="panel">
+
+                    <div class="panel-heading">
+                        <h2>Security Guidelines</h2>
+                    </div>
+
+                    <div class="guideline-item">
+                        <span class="guideline-number">01</span>
+                        <p>Use a strong and unique password.</p>
+                    </div>
+
+                    <div class="guideline-item">
+                        <span class="guideline-number">02</span>
+                        <p>Keep your account information updated.</p>
+                    </div>
+
+                    <div class="guideline-item">
+                        <span class="guideline-number">03</span>
+                        <p>Review your notification preferences regularly.</p>
+                    </div>
+
+                </section>
+
+
+                <!-- HELP SECTION -->
+                <section class="panel">
+
+                    <div class="panel-heading">
+                        <h2>Need Assistance?</h2>
+                    </div>
+
+                    <p class="page-description">
+                        Contact your university administrator if you experience account-related problems.
+                    </p>
+
+                </section>
+
+            </aside>
+
+        </div>
+
+
+        <!-- BOTTOM BANNER -->
+        <section class="bottom-banner">
+
+            <div>
+                <div class="bottom-icon">✦</div>
+
+                <div>
+                    <h3>Keep Your Account Secure</h3>
+                    <p>Review your account settings and preferences regularly.</p>
+                </div>
+            </div>
+
+            <a href="My Profile.html" class="hero-button">
+                My Profile
+                <span class="button-arrow">→</span>
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2026 InternEase. All rights reserved.</p>
+        <span>Company Representative Portal</span>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

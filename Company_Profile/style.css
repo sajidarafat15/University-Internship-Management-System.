@@ -87,6 +87,68 @@ button, input, select, textarea { font-family: inherit; }
     font-weight: 800;
 }
 
+/* PROFILE DROPDOWN */
+.profile-menu {
+    position: relative;
+}
+
+.profile-icon {
+    border: none;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.profile-dropdown {
+    display: none;
+    position: absolute;
+    top: 52px;
+    right: 0;
+    width: 220px;
+    padding: 10px;
+    background: #202943;
+    border: 1px solid #46516F;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    z-index: 150;
+}
+
+.profile-dropdown.show {
+    display: block;
+}
+
+.dropdown-header {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #46516F;
+}
+
+.dropdown-header strong {
+    color: #F9FAFB;
+    font-size: 13px;
+}
+
+.dropdown-header span {
+    color: #9CA3AF;
+    font-size: 11px;
+}
+
+.profile-dropdown a {
+    display: block;
+    padding: 11px;
+    border-radius: 7px;
+    color: #CBD5E1;
+    font-size: 12px;
+}
+
+.profile-dropdown a:hover {
+    background: #33405E;
+    color: #2DD4BF;
+}
+
 /* POPUP MENU */
 
 #menu-toggle { display: none; }

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile | InternEase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-left">
+            <button type="button" class="menu-button" id="menuButton">☰</button>
+            <a href="./Index.html" class="logo">Intern<span>Ease</span></a>
+        </div>
+
+        <div class="header-right">
+            <div class="account-info">
+                <span>COMPANY ACCOUNT</span>
+                <strong>Ollyo</strong>
+            </div>
+
+            <div class="profile-menu">
+                <button class="profile-button" id="profileButton" type="button">O</button>
+
+                <div class="profile-dropdown" id="profileDropdown">
+                    <div class="dropdown-header">
+                        <strong>Ollyo</strong>
+                        <span>Company Representative</span>
+                    </div>
+
+                    <a href="./Index.html">Dashboard</a>
+                    <a href="./My%20Profile.html">My Profile</a>
+                    <a href="./Account%20Settings.html">Account Settings</a>
+                    <a href="../Logout/index.html" class="logout-link">Log Out</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- NAVIGATION OVERLAY -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+
+    <!-- NAVIGATION MENU -->
+    <nav class="popup-menu" id="popupMenu">
+
+        <div class="menu-heading">
+            <div>
+                <a href="./Index.html" class="logo">Intern<span>Ease</span></a>
+            </div>
+            <button type="button" class="close-button" id="closeMenu">×</button>
+        </div>
+
+        <p class="menu-small">COMPANY REPRESENTATIVE</p>
+
+        <a href="./Index.html">
+            <span class="nav-icon">▦</span> Dashboard
+        </a>
+
+        <a href="../Company_Profile/index.html">
+            <span class="nav-icon">▣</span> Company Profile & Verification
+        </a>
+
+        <a href="../Internship_Management/index.html">
+            <span class="nav-icon">▤</span> Internship Management
+        </a>
+
+        <a href="../Applications/index.html">
+            <span class="nav-icon">▧</span> Applications & CV Review
+        </a>
+
+        <a href="../Candidate_Selection/index.html">
+            <span class="nav-icon">♙</span> Candidate Selection
+        </a>
+
+        <a href="../Offer_Letter/index.html">
+            <span class="nav-icon">✉</span> Offer Letter Management
+        </a>
+
+        <a href="../Supervisor_Management/index.html">
+            <span class="nav-icon">♙</span> Company Supervisor Management
+        </a>
+
+        <div class="menu-footer">
+            <span>COMPANY ACCOUNT</span>
+            <strong>Ollyo</strong>
+        </div>
+
+    </nav>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+
+        <!-- PAGE INTRODUCTION -->
+        <section class="welcome-section">
+            <div>
+                <p class="eyebrow">COMPANY ACCOUNT</p>
+                <h1>My Profile</h1>
+                <p class="section-label">
+                    View and manage your company profile information.
+                </p>
+            </div>
+
+            <div class="welcome-icon">◉</div>
+        </section>
+
+
+        <!-- PROFILE OVERVIEW -->
+        <section class="profile-overview section-card">
+
+            <div class="profile-main">
+                <div class="company-avatar">O</div>
+
+                <div class="company-details">
+                    <div class="company-title">
+                        <h2>Ollyo</h2>
+                        <span class="verification-badge">✓ Verified</span>
+                    </div>
+
+                    <p>Company Representative Account</p>
+                    <span class="company-type">Technology Company</span>
+                </div>
+            </div>
+
+            <a href="../Company_Profile/index.html" class="edit-button">
+                ✎ Edit Profile
+            </a>
+
+        </section>
+
+
+        <!-- PROFILE CONTENT -->
+        <div class="content-grid">
+
+            <div class="main-content">
+
+                <!-- COMPANY INFORMATION -->
+                <section class="section-card">
+
+                    <div class="section-header">
+                        <div>
+                            <p class="section-label">COMPANY DETAILS</p>
+                            <h2>Company Information</h2>
+                        </div>
+
+                        <div class="form-icon">▣</div>
+                    </div>
+
+                    <div class="profile-grid">
+
+                        <div class="profile-field">
+                            <span>Company Name</span>
+                            <strong>Ollyo</strong>
+                        </div>
+
+                        <div class="profile-field">
+                            <span>Industry</span>
+                            <strong>Technology</strong>
+                        </div>
+
+                        <div class="profile-field">
+                            <span>Company Type</span>
+                            <strong>Private Company</strong>
+                        </div>
+
+                        <div class="profile-field">
+                            <span>Website</span>
+                            <strong>Not Provided</strong>
+                        </div>
+
+                        <div class="profile-field full-width">
+                            <span>Company Address</span>
+                            <strong>Not Provided</strong>
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- CONTACT INFORMATION -->
+                <section class="section-card">
+
+                    <div class="section-header">
+                        <div>
+                            <p class="section-label">CONTACT DETAILS</p>
+                            <h2>Contact Information</h2>
+                        </div>
+
+                        <div class="form-icon">✉</div>
+                    </div>
+
+                    <div class="profile-grid">
+
+                        <div class="profile-field">
+                            <span>Company Email</span>
+                            <strong>Not Provided</strong>
+                        </div>
+
+                        <div class="profile-field">
+                            <span>Contact Number</span>
+                            <strong>Not Provided</strong>
+                        </div>
+
+                        <div class="profile-field">
+                            <span>Account Type</span>
+                            <strong>Company Representative</strong>
+                        </div>
+
+                        <div class="profile-field">
+                            <span>Account Name</span>
+                            <strong>Ollyo</strong>
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- ABOUT COMPANY -->
+                <section class="section-card">
+
+                    <div class="section-header">
+                        <div>
+                            <p class="section-label">ABOUT THE COMPANY</p>
+                            <h2>Company Overview</h2>
+                        </div>
+
+                        <div class="form-icon">▤</div>
+                    </div>
+
+                    <p class="company-description">
+                        Company description has not been added yet.
+                        You can update your company overview through
+                        the Company Profile & Verification section.
+                    </p>
+
+                </section>
+
+            </div>
+
+
+            <!-- SIDEBAR -->
+            <aside class="sidebar">
+
+                <!-- VERIFICATION STATUS -->
+                <section class="side-card">
+
+                    <div class="side-card-header">
+                        <h3>Verification Status</h3>
+                        <span class="status-icon">✓</span>
+                    </div>
+
+                    <div class="verification-status">
+                        <span class="status verified">Verified</span>
+                        <p>Your company profile is marked as verified.</p>
+                    </div>
+
+                    <a href="../Company_Profile/index.html" class="side-link">
+                        View Verification Details →
+                    </a>
+
+                </section>
+
+
+                <!-- ACCOUNT INFORMATION -->
+                <section class="side-card">
+
+                    <h3>Account Information</h3>
+
+                    <div class="account-item">
+                        <span>Account Name</span>
+                        <strong>Ollyo</strong>
+                    </div>
+
+                    <div class="account-item">
+                        <span>Account Role</span>
+                        <strong>Company Representative</strong>
+                    </div>
+
+                    <div class="account-item">
+                        <span>Account Status</span>
+                        <strong class="active-status">Active</strong>
+                    </div>
+
+                </section>
+
+
+                <!-- QUICK ACTION -->
+                <section class="side-card quick-action">
+
+                    <div class="quick-icon">⚙</div>
+
+                    <h3>Manage Your Account</h3>
+
+                    <p>
+                        Update your account preferences and
+                        manage your company account settings.
+                    </p>
+
+                    <a href="./Account%20Settings.html" class="side-button">
+                        Account Settings →
+                    </a>
+
+                </section>
+
+            </aside>
+
+        </div>
+
+
+        <!-- BOTTOM BANNER -->
+        <section class="bottom-banner">
+
+            <div class="banner-icon">✦</div>
+
+            <div>
+                <h3>Keep Your Company Profile Updated</h3>
+                <p>
+                    Maintain accurate company information to help
+                    students understand your organization and opportunities.
+                </p>
+            </div>
+
+            <a href="../Company_Profile/index.html" class="banner-button">
+                Update Profile →
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2026 InternEase. All rights reserved.</p>
+        <span>Company Representative Portal</span>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

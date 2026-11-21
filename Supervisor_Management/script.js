@@ -9,6 +9,26 @@ let responsibilitiesInput = document.getElementById("responsibilities");
 let assignmentTable = document.querySelector("tbody");
 let supervisorCards = document.querySelectorAll(".supervisor-card");
 
+// PROFILE DROPDOWN
+let profileButton = document.getElementById("profileButton");
+let profileDropdown = document.getElementById("profileDropdown");
+
+if (profileButton != null && profileDropdown != null) {
+
+    profileButton.addEventListener("click", function(event) {
+        event.stopPropagation();
+        profileDropdown.classList.toggle("show");
+    });
+
+    document.addEventListener("click", function(event) {
+        if (!profileDropdown.contains(event.target) &&
+            !profileButton.contains(event.target)) {
+
+            profileDropdown.classList.remove("show");
+        }
+    });
+}
+
 // UPDATE SUPERVISOR WORKLOAD
 function updateWorkload() {
     let workloads = document.querySelectorAll(".supervisor-workload");
@@ -16,7 +36,6 @@ function updateWorkload() {
     for (let i = 0; i < workloads.length; i++) {
         let supervisorName = supervisorCards[i].querySelector(".supervisor-info h3").textContent;
         let count = 0;
-
         for (let j = 0; j < assignmentTable.rows.length; j++) {
             let assignedSupervisor = assignmentTable.rows[j].cells[2].textContent;
 
@@ -24,7 +43,6 @@ function updateWorkload() {
                 count++;
             }
         }
-
         workloads[i].textContent = "Workload: " + count;
     }
 }
@@ -34,7 +52,6 @@ function updateStatistics() {
     let totalSupervisors = supervisorCards.length;
     let assignedInterns = assignmentTable.rows.length;
     let availableSupervisors = 0;
-
     for (let i = 0; i < supervisorCards.length; i++) {
         let status = supervisorCards[i].querySelector(".availability").textContent;
 
@@ -57,7 +74,6 @@ function updateStatistics() {
 // ASSIGN SUPERVISOR
 function assignSupervisor(event) {
     event.preventDefault();
-
     let intern = internInput.options[internInput.selectedIndex].text;
     let supervisor = supervisorInput.options[supervisorInput.selectedIndex].text;
     let department = departmentInput.value;
@@ -82,7 +98,6 @@ function assignSupervisor(event) {
             selectedCard = supervisorCards[i];
         }
     }
-
     if (selectedCard == null) {
         alert("Selected supervisor was not found.");
         return;
@@ -90,7 +105,6 @@ function assignSupervisor(event) {
 
     // CHECK SUPERVISOR STATUS
     let supervisorStatus = selectedCard.querySelector(".availability").textContent;
-
     if (supervisorStatus == "Inactive") {
         alert("This supervisor is currently inactive.");
         return;
@@ -106,7 +120,6 @@ function assignSupervisor(event) {
 
     // CHECK EXISTING ASSIGNMENT
     let existingRow = null;
-
     for (let i = 0; i < assignmentTable.rows.length; i++) {
         let existingIntern = assignmentTable.rows[i].cells[0].textContent;
 
@@ -142,7 +155,6 @@ function assignSupervisor(event) {
 
         alert("Supervisor assigned successfully.");
     }
-
     updateWorkload();
     updateStatistics();
     assignmentForm.reset();
