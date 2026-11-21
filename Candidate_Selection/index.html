@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Selection | InternEase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <input type="checkbox" id="menu-toggle">
+
+    <div class="header-left">
+        <label for="menu-toggle" class="menu-button">
+            <span class="menu-symbol">☰</span> Menu
+        </label>
+        <a href="../Dashboard/index.html" class="logo">Intern<span>Ease</span></a>
+    </div>
+
+    <div class="header-right">
+        <div class="company-info">
+            <span class="company-label">COMPANY ACCOUNT</span>
+            <span class="company-name">Ollyo</span>
+        </div>
+        <div class="profile-icon">O</div>
+    </div>
+
+    <label for="menu-toggle" class="menu-overlay"></label>
+
+    <nav class="popup-menu">
+        <div class="menu-heading">
+            <div>
+                <span class="menu-small">INTERNEASE PORTAL</span>
+                <h3>Navigation</h3>
+            </div>
+            <label for="menu-toggle" class="close-button">×</label>
+        </div>
+
+        <a href="../Dashboard/index.html"><span class="nav-icon">⌂</span>Dashboard</a>
+        <a href="../Company_Profile/index.html"><span class="nav-icon">▣</span>Company Profile & Verification</a>
+        <a href="../Internship_Management/index.html"><span class="nav-icon">▤</span>Internship Management</a>
+        <a href="../Applications/index.html"><span class="nav-icon">▧</span>Applications & CV Review</a>
+        <a href="../Candidate_Selection/index.html" class="active"><span class="nav-icon">✓</span>Candidate Selection</a>
+        <a href="../Offer_Letter/index.html"><span class="nav-icon">✉</span>Offer Letter Management</a>
+        <a href="../Supervisor_Management/index.html"><span class="nav-icon">♙</span>Company Supervisor Management</a>
+
+        <div class="menu-footer">Company Representative Workspace</div>
+    </nav>
+</header>
+
+<main class="main-container">
+
+    <section class="welcome-section">
+        <div>
+            <span class="section-label">RECRUITMENT WORKSPACE</span>
+            <h1>Candidate Selection</h1>
+            <p>Evaluate reviewed applicants, shortlist promising candidates, and make final recruitment decisions.</p>
+        </div>
+        <a href="../Offer_Letter/index.html" class="primary-button">Accepted Candidates →</a>
+    </section>
+
+    <section class="overview-grid">
+        <div class="overview-card blue">
+            <div class="overview-top"><span>Total Candidates</span><div class="overview-icon">♙</div></div>
+            <h2>30</h2>
+            <p>Completed initial review</p>
+        </div>
+
+        <div class="overview-card purple">
+            <div class="overview-top"><span>Shortlisted</span><div class="overview-icon">✦</div></div>
+            <h2>12</h2>
+            <p>Selected for consideration</p>
+        </div>
+
+        <div class="overview-card green">
+            <div class="overview-top"><span>Accepted</span><div class="overview-icon">✓</div></div>
+            <h2>08</h2>
+            <p>Final selection completed</p>
+        </div>
+
+        <div class="overview-card red">
+            <div class="overview-top"><span>Rejected</span><div class="overview-icon">×</div></div>
+            <h2>10</h2>
+            <p>Not selected for internship</p>
+        </div>
+    </section>
+
+    <section class="selection-layout">
+        <div class="left-content">
+
+            <section class="panel candidates-panel">
+                <div class="panel-heading">
+                    <div>
+                        <span class="section-label">CANDIDATE DIRECTORY</span>
+                        <h2>Candidate Evaluation</h2>
+                        <p>Review candidate profiles and manage recruitment decisions.</p>
+                    </div>
+                    <span class="total-tag">30 Candidates</span>
+                </div>
+
+                <div class="filter-bar">
+                    <div class="search-box">
+                        <span>⌕</span>
+                        <input type="text" placeholder="Search candidate name...">
+                    </div>
+
+                    <select>
+                        <option>All Internships</option>
+                        <option>Software Engineering Intern</option>
+                        <option>UI/UX Design Intern</option>
+                    </select>
+
+                    <select>
+                        <option>All Decisions</option>
+                        <option>Shortlisted</option>
+                        <option>Accepted</option>
+                        <option>Rejected</option>
+                        <option>Awaiting Decision</option>
+                    </select>
+                </div>
+
+                <div class="candidate-list">
+
+                    <article class="candidate-card featured">
+                        <div class="candidate-top">
+                            <div class="candidate-avatar avatar-blue">TT</div>
+                            <div class="candidate-info">
+                                <h3>S.M Tajwar Tahmid</h3>
+                                <p>Software Engineering Intern</p>
+                                <span>Computer Science & Engineering</span>
+                            </div>
+                            <span class="decision-badge shortlisted">✦ Shortlisted</span>
+                        </div>
+
+                        <div class="candidate-metrics">
+                            <div><span>CGPA</span><strong>3.50 / 4.00</strong></div>
+                            <div><span>Academic Level</span><strong>10th Semester</strong></div>
+                            <div><span>Application Date</span><strong>20 Oct 2026</strong></div>
+                        </div>
+
+                        <div class="candidate-bottom">
+                            <div class="candidate-skills">
+                                <span>HTML</span><span>CSS</span><span>PHP</span><span>MySQL</span>
+                            </div>
+                            <a href="#candidate-details" class="details-link">View Profile →</a>
+                        </div>
+                    </article>
+
+                    <article class="candidate-card">
+                        <div class="candidate-top">
+                            <div class="candidate-avatar avatar-purple">FF</div>
+                            <div class="candidate-info">
+                                <h3>Farhan Sadik Fahim</h3>
+                                <p>Software Engineering Intern</p>
+                                <span>Computer Science & Engineering</span>
+                            </div>
+                            <span class="decision-badge awaiting">◷ Awaiting Decision</span>
+                        </div>
+
+                        <div class="candidate-metrics">
+                            <div><span>CGPA</span><strong>3.65 / 4.00</strong></div>
+                            <div><span>Academic Level</span><strong>10th Semester</strong></div>
+                            <div><span>Application Date</span><strong>19 Oct 2026</strong></div>
+                        </div>
+
+                        <div class="candidate-bottom">
+                            <div class="candidate-skills">
+                                <span>Java</span><span>Python</span><span>Database</span>
+                            </div>
+                            <a href="#candidate-details" class="details-link">View Profile →</a>
+                        </div>
+                    </article>
+
+                    <article class="candidate-card">
+                        <div class="candidate-top">
+                            <div class="candidate-avatar avatar-green">SA</div>
+                            <div class="candidate-info">
+                                <h3>MD. Sajid Arafat</h3>
+                                <p>UI/UX Design Intern</p>
+                                <span>Computer Science & Engineering</span>
+                            </div>
+                            <span class="decision-badge accepted">✓ Accepted</span>
+                        </div>
+
+                        <div class="candidate-metrics">
+                            <div><span>CGPA</span><strong>3.50 / 4.00</strong></div>
+                            <div><span>Academic Level</span><strong>10th Semester</strong></div>
+                            <div><span>Application Date</span><strong>18 Oct 2026</strong></div>
+                        </div>
+
+                        <div class="candidate-bottom">
+                            <div class="candidate-skills">
+                                <span>Figma</span><span>UI Design</span><span>Prototyping</span>
+                            </div>
+                            <a href="#candidate-details" class="details-link">View Profile →</a>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="pagination">
+                    <span>Showing 3 of 30 candidates</span>
+                    <div>
+                        <button type="button">←</button>
+                        <button type="button" class="current-page">1</button>
+                        <button type="button">2</button>
+                        <button type="button">3</button>
+                        <button type="button">→</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="panel details-panel" id="candidate-details">
+                <div class="panel-heading">
+                    <div>
+                        <span class="section-label">CANDIDATE PROFILE</span>
+                        <h2>Candidate Details</h2>
+                        <p>Review the selected candidate's information before making a decision.</p>
+                    </div>
+                    <span class="decision-badge shortlisted">✦ Shortlisted</span>
+                </div>
+
+                <div class="profile-header">
+                    <div class="profile-avatar">TT</div>
+                    <div class="profile-heading">
+                        <h2>S.M Tajwar Tahmid</h2>
+                        <p>Software Engineering Intern</p>
+                        <span>Candidate ID: CAN-2026-001</span>
+                    </div>
+                </div>
+
+                <div class="detail-grid">
+                    <div class="detail-item"><span>University</span><strong>University Name</strong></div>
+                    <div class="detail-item"><span>Department</span><strong>Computer Science & Engineering</strong></div>
+                    <div class="detail-item"><span>Current Semester</span><strong>10th Semester</strong></div>
+                    <div class="detail-item"><span>CGPA</span><strong>3.50 / 4.00</strong></div>
+                    <div class="detail-item"><span>Applied Position</span><strong>Software Engineering Intern</strong></div>
+                    <div class="detail-item"><span>Application Status</span><strong>Reviewed</strong></div>
+                </div>
+
+                <div class="evaluation-section">
+                    <h3>Skills & Competencies</h3>
+                    <div class="skill-tags">
+                        <span>HTML</span><span>CSS</span><span>PHP</span><span>MySQL</span><span>Problem Solving</span>
+                    </div>
+                </div>
+
+                <div class="evaluation-section">
+                    <h3>Recruitment Evaluation</h3>
+                    <div class="evaluation-grid">
+                        <div class="evaluation-item"><span>Academic Performance</span><strong class="good">Good</strong></div>
+                        <div class="evaluation-item"><span>Technical Skills</span><strong class="excellent">Excellent</strong></div>
+                        <div class="evaluation-item"><span>Eligibility</span><strong class="good">Eligible</strong></div>
+                        <div class="evaluation-item"><span>CV Review</span><strong class="excellent">Completed</strong></div>
+                    </div>
+                </div>
+
+                <div class="decision-section">
+                    <h3>Make Selection Decision</h3>
+                    <p>Choose the appropriate decision for this candidate.</p>
+
+                    <div class="decision-options">
+                        <a href="#candidate-details" class="decision-button shortlist-button">✦ Shortlist</a>
+                        <a href="../Offer_Letter/index.html" class="decision-button accept-button">✓ Accept Candidate</a>
+                        <a href="#candidate-details" class="decision-button reject-button">× Reject Candidate</a>
+                    </div>
+
+                    <div class="decision-note">
+                        <span>ⓘ</span>
+                        <p>Accepted candidates can proceed to the Offer Letter Management stage. Rejected candidates will not proceed further in the recruitment process.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <aside class="right-content">
+
+            <section class="side-card selection-summary">
+                <div class="side-card-icon">✦</div>
+                <span class="section-label">SELECTION PROGRESS</span>
+                <h3>Decision Overview</h3>
+
+                <div class="summary-circle">
+                    <div><strong>67%</strong><span>Decisions Made</span></div>
+                </div>
+
+                <div class="summary-stats">
+                    <div><span class="summary-dot shortlist-dot"></span><span>Shortlisted</span><strong>12</strong></div>
+                    <div><span class="summary-dot accepted-dot"></span><span>Accepted</span><strong>08</strong></div>
+                    <div><span class="summary-dot rejected-dot"></span><span>Rejected</span><strong>10</strong></div>
+                </div>
+            </section>
+
+            <section class="side-card selection-guide">
+                <span class="section-label">DECISION GUIDE</span>
+                <h3>Candidate Status</h3>
+
+                <div class="guide-item">
+                    <span class="guide-dot shortlist-dot"></span>
+                    <div><strong>Shortlisted</strong><p>Promising candidates selected for consideration.</p></div>
+                </div>
+
+                <div class="guide-item">
+                    <span class="guide-dot accepted-dot"></span>
+                    <div><strong>Accepted</strong><p>Selected candidates who can receive offer letters.</p></div>
+                </div>
+
+                <div class="guide-item">
+                    <span class="guide-dot rejected-dot"></span>
+                    <div><strong>Rejected</strong><p>Candidates not selected for the internship.</p></div>
+                </div>
+            </section>
+
+            <section class="accepted-card">
+                <div class="accepted-icon">✓</div>
+                <h3>Accepted Candidates</h3>
+                <div class="accepted-number">08</div>
+                <p>Selected candidates are ready for the offer letter process.</p>
+                <a href="../Offer_Letter/index.html">Manage Offer Letters →</a>
+            </section>
+
+            <section class="selection-tips">
+                <div class="tips-icon">✧</div>
+                <h3>Selection Tips</h3>
+                <ul>
+                    <li>Compare candidates against internship requirements.</li>
+                    <li>Consider academic performance and technical skills.</li>
+                    <li>Review submitted CVs before final decisions.</li>
+                    <li>Ensure decisions are consistent and fair.</li>
+                </ul>
+            </section>
+
+        </aside>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>© 2026 InternEase. All rights reserved.</p>
+    <p>Company Representative Portal <span>•</span> Ollyo</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

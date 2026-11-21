@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Management | InternEase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <input type="checkbox" id="menu-toggle">
+
+    <div class="header-left">
+        <label for="menu-toggle" class="menu-button">
+            <span class="menu-symbol">☰</span> Menu
+        </label>
+        <a href="../Dashboard/index.html" class="logo">Intern<span>Ease</span></a>
+    </div>
+
+    <div class="header-right">
+        <div class="company-info">
+            <span class="company-label">COMPANY ACCOUNT</span>
+            <span class="company-name">Ollyo</span>
+        </div>
+        <div class="profile-icon">O</div>
+    </div>
+
+    <label for="menu-toggle" class="menu-overlay"></label>
+
+    <nav class="popup-menu">
+        <div class="menu-heading">
+            <div>
+                <span class="menu-small">INTERNEASE PORTAL</span>
+                <h3>Navigation</h3>
+            </div>
+            <label for="menu-toggle" class="close-button">×</label>
+        </div>
+
+        <a href="../Dashboard/index.html"><span class="nav-icon">⌂</span>Dashboard</a>
+        <a href="../Company_Profile/index.html"><span class="nav-icon">▣</span>Company Profile & Verification</a>
+        <a href="../Internship_Management/index.html" class="active"><span class="nav-icon">▤</span>Internship Management</a>
+        <a href="../Applications/index.html"><span class="nav-icon">▧</span>Applications & CV Review</a>
+        <a href="../Candidate_Selection/index.html"><span class="nav-icon">✓</span>Candidate Selection</a>
+        <a href="../Offer_Letter/index.html"><span class="nav-icon">✉</span>Offer Letter Management</a>
+        <a href="../Supervisor_Management/index.html"><span class="nav-icon">♙</span>Company Supervisor Management</a>
+
+        <div class="menu-footer">Company Representative Workspace</div>
+    </nav>
+</header>
+
+<main class="main-container">
+
+    <section class="welcome-section">
+        <div>
+            <span class="section-label">RECRUITMENT WORKSPACE</span>
+            <h1>Internship Management</h1>
+            <p>Create opportunities, attract talented students, and manage your internship programs.</p>
+        </div>
+        <a href="#create-internship" class="primary-button">+ Create Internship</a>
+    </section>
+
+    <section class="overview-grid">
+        <div class="overview-card blue">
+            <div class="overview-top"><span>Total Internships</span><div class="overview-icon">▤</div></div>
+            <h2>12</h2>
+            <p>All opportunities created</p>
+        </div>
+        <div class="overview-card green">
+            <div class="overview-top"><span>Active Internships</span><div class="overview-icon">✓</div></div>
+            <h2>08</h2>
+            <p>Currently accepting applications</p>
+        </div>
+        <div class="overview-card purple">
+            <div class="overview-top"><span>Draft Internships</span><div class="overview-icon">✎</div></div>
+            <h2>02</h2>
+            <p>Waiting to be published</p>
+        </div>
+        <div class="overview-card orange">
+            <div class="overview-top"><span>Closed Internships</span><div class="overview-icon">◷</div></div>
+            <h2>02</h2>
+            <p>Application period completed</p>
+        </div>
+    </section>
+
+    <section class="content-layout">
+        <div class="left-content">
+
+            <section class="panel opportunities-panel">
+                <div class="panel-heading">
+                    <div>
+                        <span class="section-label">OPPORTUNITY DIRECTORY</span>
+                        <h2>Manage Internships</h2>
+                        <p>View and manage your company's internship opportunities.</p>
+                    </div>
+                    <span class="total-tag">12 Opportunities</span>
+                </div>
+
+                <div class="filter-bar">
+                    <div class="search-box">
+                        <span>⌕</span>
+                        <input type="text" placeholder="Search internship position...">
+                    </div>
+                    <select>
+                        <option>All Status</option>
+                        <option>Active</option>
+                        <option>Draft</option>
+                        <option>Closed</option>
+                    </select>
+                    <select>
+                        <option>All Departments</option>
+                        <option>Software Development</option>
+                        <option>Design</option>
+                        <option>Marketing</option>
+                    </select>
+                </div>
+
+                <div class="internship-list">
+
+                    <article class="internship-card">
+                        <div class="job-top">
+                            <div class="job-icon software">⌘</div>
+                            <div class="job-title">
+                                <h3>Software Engineering Intern</h3>
+                                <p>Engineering Department · Full Time</p>
+                            </div>
+                            <span class="status active-status">● Active</span>
+                        </div>
+
+                        <div class="job-details">
+                            <span>⌖ Dhaka, Bangladesh</span>
+                            <span>◷ 3 Months</span>
+                            <span>৳ 10,000 / Month</span>
+                        </div>
+
+                        <div class="job-tags">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span>
+                        </div>
+
+                        <div class="job-bottom">
+                            <div class="job-stats">
+                                <div><strong>36</strong><span>Applications</span></div>
+                                <div><strong>15 Dec 2026</strong><span>Application Deadline</span></div>
+                            </div>
+                            <div class="job-actions">
+                                <a href="#create-internship" class="edit-button">✎ Edit</a>
+                                <a href="#create-internship" class="manage-button">Manage →</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="internship-card">
+                        <div class="job-top">
+                            <div class="job-icon design">✧</div>
+                            <div class="job-title">
+                                <h3>UI/UX Design Intern</h3>
+                                <p>Creative Department · Full Time</p>
+                            </div>
+                            <span class="status active-status">● Active</span>
+                        </div>
+
+                        <div class="job-details">
+                            <span>⌖ Dhaka, Bangladesh</span>
+                            <span>◷ 4 Months</span>
+                            <span>৳ 8,000 / Month</span>
+                        </div>
+
+                        <div class="job-tags">
+                            <span>Figma</span><span>UI Design</span><span>Prototyping</span>
+                        </div>
+
+                        <div class="job-bottom">
+                            <div class="job-stats">
+                                <div><strong>24</strong><span>Applications</span></div>
+                                <div><strong>20 Dec 2026</strong><span>Application Deadline</span></div>
+                            </div>
+                            <div class="job-actions">
+                                <a href="#create-internship" class="edit-button">✎ Edit</a>
+                                <a href="#create-internship" class="manage-button">Manage →</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="internship-card">
+                        <div class="job-top">
+                            <div class="job-icon marketing">↗</div>
+                            <div class="job-title">
+                                <h3>Digital Marketing Intern</h3>
+                                <p>Marketing Department · Part Time</p>
+                            </div>
+                            <span class="status draft-status">● Draft</span>
+                        </div>
+
+                        <div class="job-details">
+                            <span>⌖ Remote</span>
+                            <span>◷ 3 Months</span>
+                            <span>৳ 6,000 / Month</span>
+                        </div>
+
+                        <div class="job-tags">
+                            <span>SEO</span><span>Content Writing</span><span>Social Media</span>
+                        </div>
+
+                        <div class="job-bottom">
+                            <div class="job-stats">
+                                <div><strong>Not Published</strong><span>Applications</span></div>
+                                <div><strong>Not Set</strong><span>Application Deadline</span></div>
+                            </div>
+                            <div class="job-actions">
+                                <a href="#create-internship" class="edit-button">✎ Edit</a>
+                                <a href="#create-internship" class="manage-button">Manage →</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="view-all">
+                    <a href="#create-internship">View All Opportunities →</a>
+                </div>
+            </section>
+
+            <section class="panel create-panel" id="create-internship">
+                <div class="panel-heading">
+                    <div>
+                        <span class="section-label">NEW OPPORTUNITY</span>
+                        <h2>Create Internship</h2>
+                        <p>Fill in the details to create a new internship opportunity.</p>
+                    </div>
+                    <div class="create-icon">＋</div>
+                </div>
+
+                <form action="#" method="post">
+
+                    <div class="form-section">
+                        <h3><span class="form-number">01</span> Basic Information</h3>
+
+                        <div class="form-grid">
+                            <div class="form-group full-width">
+                                <label>Internship Position <span>*</span></label>
+                                <input type="text" placeholder="e.g. Software Engineering Intern" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Department <span>*</span></label>
+                                <select required>
+                                    <option value="">Select Department</option>
+                                    <option>Engineering</option>
+                                    <option>Design</option>
+                                    <option>Marketing</option>
+                                    <option>Human Resources</option>
+                                    <option>Business Development</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Employment Type <span>*</span></label>
+                                <select required>
+                                    <option value="">Select Type</option>
+                                    <option>Full Time</option>
+                                    <option>Part Time</option>
+                                    <option>Remote</option>
+                                    <option>Hybrid</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Work Location <span>*</span></label>
+                                <input type="text" placeholder="e.g. Dhaka, Bangladesh" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Number of Vacancies <span>*</span></label>
+                                <input type="number" min="1" placeholder="e.g. 5" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3><span class="form-number purple-number">02</span> Internship Details</h3>
+
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label>Internship Duration <span>*</span></label>
+                                <select required>
+                                    <option value="">Select Duration</option>
+                                    <option>2 Months</option>
+                                    <option>3 Months</option>
+                                    <option>4 Months</option>
+                                    <option>6 Months</option>
+                                    <option>12 Months</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Monthly Stipend (BDT)</label>
+                                <input type="number" min="0" placeholder="e.g. 10000">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Application Deadline <span>*</span></label>
+                                <input type="date" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Expected Start Date</label>
+                                <input type="date">
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label>Internship Description <span>*</span></label>
+                                <textarea rows="5" placeholder="Describe the internship role, responsibilities and learning opportunities..." required></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3><span class="form-number green-number">03</span> Skills & Eligibility</h3>
+
+                        <div class="form-grid">
+                            <div class="form-group full-width">
+                                <label>Required Skills <span>*</span></label>
+                                <input type="text" placeholder="e.g. HTML, CSS, PHP, Database Management" required>
+                                <small>Separate multiple skills using commas.</small>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Minimum CGPA</label>
+                                <input type="number" min="0" max="4" step="0.01" placeholder="e.g. 3.00">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Preferred Academic Level</label>
+                                <select>
+                                    <option value="">Select Academic Level</option>
+                                    <option>Undergraduate</option>
+                                    <option>Graduate</option>
+                                    <option>Final Year Students</option>
+                                    <option>Any University Student</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label>Additional Eligibility Requirements</label>
+                                <textarea rows="3" placeholder="Mention any additional academic or technical requirements..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-note">
+                        <span>ⓘ</span>
+                        <p>Make sure all internship information is accurate before publishing. Published opportunities will be visible to eligible students.</p>
+                    </div>
+
+                    <div class="form-buttons">
+                        <button type="reset" class="reset-button">Reset Form</button>
+                        <button type="button" class="save-draft">Save as Draft</button>
+                        <button type="submit" class="publish-button">Publish Internship ↗</button>
+                    </div>
+                </form>
+            </section>
+
+        </div>
+
+        <aside class="right-content">
+
+            <section class="side-card recruitment-card">
+                <div class="side-card-icon">◈</div>
+                <span class="section-label">RECRUITMENT INSIGHT</span>
+                <h3>Application Activity</h3>
+                <div class="activity-number">60</div>
+                <p>Total applications received across your active opportunities.</p>
+
+                <div class="activity-breakdown">
+                    <div><span>Software Engineering</span><strong>36</strong></div>
+                    <div class="progress-track"><div class="progress-fill software-progress"></div></div>
+                    <div><span>UI/UX Design</span><strong>24</strong></div>
+                    <div class="progress-track"><div class="progress-fill design-progress"></div></div>
+                </div>
+
+                <a href="../Applications/index.html">Review Applications →</a>
+            </section>
+
+            <section class="side-card tips-card">
+                <div class="side-card-icon">✦</div>
+                <h3>Opportunity Tips</h3>
+                <p>Make your internship posting attractive and clear to potential candidates.</p>
+
+                <div class="tip-item"><span>01</span><p>Write a clear and descriptive internship title.</p></div>
+                <div class="tip-item"><span>02</span><p>List the technical skills students need.</p></div>
+                <div class="tip-item"><span>03</span><p>Set a realistic application deadline.</p></div>
+                <div class="tip-item"><span>04</span><p>Explain responsibilities and learning outcomes.</p></div>
+            </section>
+
+            <section class="side-card status-guide">
+                <h3>Internship Status Guide</h3>
+
+                <div class="guide-item">
+                    <span class="guide-dot green-dot"></span>
+                    <div><strong>Active</strong><p>Accepting student applications.</p></div>
+                </div>
+
+                <div class="guide-item">
+                    <span class="guide-dot purple-dot"></span>
+                    <div><strong>Draft</strong><p>Saved but not yet published.</p></div>
+                </div>
+
+                <div class="guide-item">
+                    <span class="guide-dot red-dot"></span>
+                    <div><strong>Closed</strong><p>No longer accepting applications.</p></div>
+                </div>
+            </section>
+
+            <section class="help-card">
+                <div class="help-icon">?</div>
+                <h3>Need Assistance?</h3>
+                <p>Contact the University Internship Coordinator if you need help with internship verification or publication.</p>
+                <a href="mailto:">Contact Support ↗</a>
+            </section>
+
+        </aside>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>© 2026 InternEase. All rights reserved.</p>
+    <p>Company Representative Portal <span>•</span> Ollyo</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

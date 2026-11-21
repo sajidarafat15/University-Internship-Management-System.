@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offer Letter Management | InternEase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <input type="checkbox" id="menu-toggle">
+    <div class="header-left">
+        <label for="menu-toggle" class="menu-button">
+            <span class="menu-symbol">☰</span>
+            <span>Menu</span>
+        </label>
+        <a href="../Dashboard/index.html" class="logo">Intern<span>Ease</span></a>
+    </div>
+    <div class="header-right">
+        <div class="company-info">
+            <span class="company-label">COMPANY ACCOUNT</span>
+            <span class="company-name">Ollyo</span>
+        </div>
+        <div class="profile-icon">O</div>
+    </div>
+    <label for="menu-toggle" class="menu-overlay"></label>
+
+    <nav class="popup-menu">
+        <div class="menu-heading">
+            <div>
+                <span class="menu-small">INTERNEASE PORTAL</span>
+                <h3>Navigation</h3>
+            </div>
+            <label for="menu-toggle" class="close-button">×</label>
+        </div>
+        <a href="../Dashboard/index.html"><span class="nav-icon">⌂</span>Dashboard</a>
+        <a href="../Company_Profile/index.html"><span class="nav-icon">▣</span>Company Profile & Verification</a>
+        <a href="../Internship_Management/index.html"><span class="nav-icon">▤</span>Internship Management</a>
+        <a href="../Applications/index.html"><span class="nav-icon">▧</span>Applications & CV Review</a>
+        <a href="../Candidate_Selection/index.html"><span class="nav-icon">✓</span>Candidate Selection</a>
+        <a href="../Offer_Letter/index.html" class="active"><span class="nav-icon">✉</span>Offer Letter Management</a>
+        <a href="../Supervisor_Management/index.html"><span class="nav-icon">♙</span>Company Supervisor Management</a>
+        <div class="menu-footer">Company Representative Workspace</div>
+    </nav>
+</header>
+
+<main class="container">
+
+    <section class="welcome-section">
+        <div>
+            <p class="eyebrow">RECRUITMENT PROCESS / FINAL STAGE</p>
+            <h1>Offer Letter Management</h1>
+            <p class="welcome-text">
+                Prepare offer letters, track student acceptance and manage
+                required joining documents.
+            </p>
+        </div>
+        <div class="welcome-icon">✉</div>
+    </section>
+
+    <section class="stats-grid">
+        <div class="stat-card blue">
+            <div class="stat-top">
+                <span>Accepted Candidates</span>
+                <span class="stat-icon">♙</span>
+            </div>
+            <h2>03</h2>
+            <p>Selected for internship</p>
+        </div>
+
+        <div class="stat-card purple">
+            <div class="stat-top">
+                <span>Letters Sent</span>
+                <span class="stat-icon">✉</span>
+            </div>
+            <h2>02</h2>
+            <p>Offer letters issued</p>
+        </div>
+
+        <div class="stat-card orange">
+            <div class="stat-top">
+                <span>Awaiting Documents</span>
+                <span class="stat-icon">▤</span>
+            </div>
+            <h2>01</h2>
+            <p>Student submission pending</p>
+        </div>
+
+        <div class="stat-card green">
+            <div class="stat-top">
+                <span>Completed</span>
+                <span class="stat-icon">✓</span>
+            </div>
+            <h2>01</h2>
+            <p>Joining requirements completed</p>
+        </div>
+    </section>
+
+    <section class="content-grid">
+        <div class="main-content">
+
+            <div class="section-card">
+                <div class="section-heading">
+                    <div>
+                        <p class="section-label">SELECTED STUDENTS</p>
+                        <h2>Accepted Candidates</h2>
+                        <p class="section-description">
+                            Manage offer letters for candidates who have been accepted.
+                        </p>
+                    </div>
+                    <span class="count-badge">3 Candidates</span>
+                </div>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Candidate</th>
+                                <th>Internship Position</th>
+                                <th>Issued Date</th>
+                                <th>Offer Status</th>
+                                <th>Documents</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="candidate-cell">
+                                        <div class="avatar avatar-blue">T</div>
+                                        <div>
+                                            <strong>S.M Tajwar Tahmid</strong>
+                                            <small>Student</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Software Engineering Intern</td>
+                                <td>15 Oct 2026</td>
+                                <td><span class="status completed">Completed</span></td>
+                                <td><span class="document-status done">✓ Complete</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="candidate-cell">
+                                        <div class="avatar avatar-purple">F</div>
+                                        <div>
+                                            <strong>Farhan Sadik Fahim</strong>
+                                            <small>Student</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Software Engineering Intern</td>
+                                <td>18 Oct 2026</td>
+                                <td><span class="status signed">Signed</span></td>
+                                <td><span class="document-status pending">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="candidate-cell">
+                                        <div class="avatar avatar-orange">S</div>
+                                        <div>
+                                            <strong>MD. Sajid Arafat</strong>
+                                            <small>Student</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>UI/UX Design Intern</td>
+                                <td>Not issued</td>
+                                <td><span class="status draft">Not Created</span></td>
+                                <td><span class="document-status waiting">Not Started</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <div class="section-heading">
+                    <div>
+                        <p class="section-label">CREATE NEW DOCUMENT</p>
+                        <h2>Create or Upload Offer Letter</h2>
+                        <p class="section-description">
+                            Prepare an offer letter or upload an existing document.
+                        </p>
+                    </div>
+                    <span class="form-icon">✎</span>
+                </div>
+
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <div class="form-grid">
+
+                        <div class="form-group full-width">
+                            <label for="candidate">Select Accepted Candidate</label>
+                            <select id="candidate" name="candidate" required>
+                                <option value="">Choose a candidate</option>
+                                <option value="tajwar">S.M Tajwar Tahmid</option>
+                                <option value="farhan">Farhan Sadik Fahim</option>
+                                <option value="sajid">MD. Sajid Arafat</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="position">Internship Position</label>
+                            <select id="position" name="position" required>
+                                <option value="">Select position</option>
+                                <option>Software Engineering Intern</option>
+                                <option>UI/UX Design Intern</option>
+                                <option>Digital Marketing Intern</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="duration">Internship Duration</label>
+                            <input type="text" id="duration" name="duration" placeholder="e.g. 3 Months">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="start-date">Joining Date</label>
+                            <input type="date" id="start-date" name="start_date">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="deadline">Acceptance Deadline</label>
+                            <input type="date" id="deadline" name="deadline">
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="stipend">Monthly Stipend</label>
+                            <input type="text" id="stipend" name="stipend" placeholder="e.g. 10,000 BDT">
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="offer-file">Upload Offer Letter</label>
+                            <div class="upload-box">
+                                <span class="upload-icon">↑</span>
+                                <div>
+                                    <strong>Choose offer letter file</strong>
+                                    <p>Upload a PDF document</p>
+                                </div>
+                                <input type="file" id="offer-file" name="offer_file" accept=".pdf">
+                            </div>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="notes">Additional Instructions</label>
+                            <textarea id="notes" name="notes" rows="4" placeholder="Write any additional joining instructions..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="reset" class="btn btn-reset">Clear Form</button>
+                        <button type="button" class="btn btn-draft">Save as Draft</button>
+                        <button type="submit" class="btn btn-send">Create Offer Letter</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="section-card">
+                <div class="section-heading">
+                    <div>
+                        <p class="section-label">DOCUMENT TRACKING</p>
+                        <h2>Student Submission Checklist</h2>
+                        <p class="section-description">
+                            Check whether students have returned their signed offer
+                            letters and submitted the required documents.
+                        </p>
+                    </div>
+                    <span class="checklist-icon">✓</span>
+                </div>
+
+                <div class="checklist-table">
+                    <div class="checklist-header">
+                        <span>Required Documents</span>
+                        <span>Submission Status</span>
+                    </div>
+
+                    <div class="checklist-row">
+                        <div>
+                            <strong>Signed Offer Letter</strong>
+                            <small>Student must sign and return the offer.</small>
+                        </div>
+                        <span class="document-status done">Submitted</span>
+                    </div>
+
+                    <div class="checklist-row">
+                        <div>
+                            <strong>Academic Documents</strong>
+                            <small>Required academic certificates or transcripts.</small>
+                        </div>
+                        <span class="document-status done">Submitted</span>
+                    </div>
+
+                    <div class="checklist-row">
+                        <div>
+                            <strong>Updated CV</strong>
+                            <small>Latest version of the student's CV.</small>
+                        </div>
+                        <span class="document-status pending">Pending</span>
+                    </div>
+
+                    <div class="checklist-row">
+                        <div>
+                            <strong>Other Required Documents</strong>
+                            <small>Additional documents requested by the company.</small>
+                        </div>
+                        <span class="document-status done">Submitted</span>
+                    </div>
+                </div>
+
+                <div class="checklist-note">
+                    <span>ⓘ</span>
+                    <p>
+                        Supervisor assignment should proceed only after the student
+                        has accepted the offer and completed the required joining
+                        documents.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <aside class="sidebar">
+
+            <div class="side-card progress-card">
+                <div class="side-heading">
+                    <h3>Offer Progress</h3>
+                    <span>↗</span>
+                </div>
+                <div class="progress-number">67%</div>
+                <p class="muted-text">Overall offer process progress</p>
+                <div class="progress-track">
+                    <div class="progress-fill"></div>
+                </div>
+                <div class="progress-details">
+                    <span>2 of 3 offers issued</span>
+                    <strong>67%</strong>
+                </div>
+                <div class="progress-details">
+                    <span>1 of 3 completed</span>
+                    <strong>33%</strong>
+                </div>
+            </div>
+
+            <div class="side-card">
+                <div class="side-heading">
+                    <h3>Offer Status Guide</h3>
+                    <span>◈</span>
+                </div>
+                <div class="guide-item">
+                    <span class="status draft">Draft</span>
+                    <p>Offer letter prepared but not sent.</p>
+                </div>
+                <div class="guide-item">
+                    <span class="status sent">Sent</span>
+                    <p>Offer letter sent to the student.</p>
+                </div>
+                <div class="guide-item">
+                    <span class="status signed">Signed</span>
+                    <p>Student has accepted and returned the signed letter.</p>
+                </div>
+                <div class="guide-item">
+                    <span class="status pending-doc">Pending Documents</span>
+                    <p>Some required joining documents are still missing.</p>
+                </div>
+                <div class="guide-item">
+                    <span class="status completed">Completed</span>
+                    <p>Offer acceptance and required documents are complete.</p>
+                </div>
+            </div>
+
+            <div class="side-card next-step-card">
+                <div class="next-icon">♙</div>
+                <p class="section-label">NEXT STEP</p>
+                <h3>Supervisor Management</h3>
+                <p>
+                    Assign a company supervisor after the selected student
+                    completes the offer acceptance and document submission process.
+                </p>
+                <a href="../Supervisor_Management/index.html" class="next-button">
+                    Go to Supervisor Management →
+                </a>
+            </div>
+
+            <div class="side-card help-card">
+                <div class="help-icon">?</div>
+                <h3>Need Assistance?</h3>
+                <p>
+                    Make sure the offer letter contains the internship position,
+                    duration, joining date and acceptance deadline.
+                </p>
+                <a href="mailto:hr@ollyo.com">Contact Support →</a>
+            </div>
+        </aside>
+    </section>
+
+    <section class="bottom-banner">
+        <div>
+            <h2>Almost there!</h2>
+            <p>
+                Complete the offer process and prepare your selected interns
+                for their internship journey.
+            </p>
+        </div>
+        <div class="banner-icon">✦</div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>© 2026 InternEase. All rights reserved.</p>
+    <p>Company Representative Portal · Ollyo</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

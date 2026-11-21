@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InternEase | Company Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <input type="checkbox" id="menu-toggle">
+
+    <div class="header-left">
+        <label for="menu-toggle" class="menu-button">
+            <span class="menu-symbol">☰</span>
+            <span>Menu</span>
+        </label>
+        <a href="../Dashboard/index.html" class="logo">Intern<span>Ease</span></a>
+    </div>
+
+    <div class="header-right">
+        <div class="company-info">
+            <span class="company-label">COMPANY ACCOUNT</span>
+            <span class="company-name">Ollyo</span>
+        </div>
+        <div class="profile-icon">O</div>
+    </div>
+
+    <label for="menu-toggle" class="menu-overlay"></label>
+
+    <nav class="popup-menu">
+        <div class="menu-heading">
+            <div>
+                <span class="menu-small">INTERNEASE PORTAL</span>
+                <h3>Navigation</h3>
+            </div>
+            <label for="menu-toggle" class="close-button">×</label>
+        </div>
+
+        <a href="../Dashboard/index.html"><span class="nav-icon">⌂</span>Dashboard</a>
+        <a href="../Company_Profile/index.html" class="active"><span class="nav-icon">▣</span>Company Profile & Verification</a>
+        <a href="../Internship_Management/index.html"><span class="nav-icon">▤</span>Internship Management</a>
+        <a href="../Applications/index.html"><span class="nav-icon">▧</span>Applications & CV Review</a>
+        <a href="../Candidate_Selection/index.html"><span class="nav-icon">✓</span>Candidate Selection</a>
+        <a href="../Offer_Letter/index.html"><span class="nav-icon">✉</span>Offer Letter Management</a>
+        <a href="../Supervisor_Management/index.html"><span class="nav-icon">♙</span>Company Supervisor Management</a>
+
+        <div class="menu-footer">Company Representative Workspace</div>
+    </nav>
+</header>
+
+<main class="main-content">
+
+    <section class="page-heading">
+        <div>
+            <p class="eyebrow">COMPANY WORKSPACE / PROFILE</p>
+            <h1>Company Profile</h1>
+            <p class="page-description">
+                Manage your company information and submit it for university verification.
+            </p>
+        </div>
+        <div class="profile-status pending-status">
+            <span class="status-dot"></span>
+            Verification Pending
+        </div>
+    </section>
+
+    <section class="company-banner">
+        <div class="company-brand">
+            <div class="company-logo">O</div>
+            <div>
+                <span class="banner-label">COMPANY PROFILE</span>
+                <h2>Ollyo</h2>
+                <p>Technology & Software Development</p>
+            </div>
+        </div>
+
+        <div class="banner-right">
+            <span class="banner-status">● PROFILE INCOMPLETE</span>
+            <p>Complete your information to proceed with verification.</p>
+        </div>
+    </section>
+
+    <section class="profile-layout">
+
+        <div class="profile-main">
+
+            <div class="form-card">
+                <div class="card-heading">
+                    <div class="heading-icon blue-icon">▣</div>
+                    <div>
+                        <h2>Basic Company Information</h2>
+                        <p>Provide your company's official information.</p>
+                    </div>
+                </div>
+
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Company Name <span>*</span></label>
+                        <input type="text" value="Ollyo" placeholder="Enter company name">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Industry <span>*</span></label>
+                        <select>
+                            <option value="">Select industry</option>
+                            <option selected>Information Technology</option>
+                            <option>Software Development</option>
+                            <option>Education</option>
+                            <option>Finance</option>
+                            <option>Marketing</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Company Type <span>*</span></label>
+                        <select>
+                            <option value="">Select company type</option>
+                            <option selected>Private Limited Company</option>
+                            <option>Public Limited Company</option>
+                            <option>Startup</option>
+                            <option>Partnership</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Year Established</label>
+                        <input type="number" placeholder="e.g. 2015">
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label>Company Website</label>
+                        <input type="url" placeholder="https://www.example.com">
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label>Company Description <span>*</span></label>
+                        <textarea rows="5" placeholder="Describe your company, services, and work environment..."></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-card">
+                <div class="card-heading">
+                    <div class="heading-icon mint-icon">✉</div>
+                    <div>
+                        <h2>Contact Information</h2>
+                        <p>Provide official company contact details.</p>
+                    </div>
+                </div>
+
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Official Email <span>*</span></label>
+                        <input type="email" placeholder="company@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Contact Number <span>*</span></label>
+                        <input type="tel" placeholder="+880 1XXXXXXXXX">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Contact Person</label>
+                        <input type="text" placeholder="Enter representative name">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Designation</label>
+                        <input type="text" placeholder="e.g. HR Manager">
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label>Office Address <span>*</span></label>
+                        <textarea rows="3" placeholder="Enter complete office address"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>City</label>
+                        <input type="text" placeholder="Enter city">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Country</label>
+                        <input type="text" value="Bangladesh">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-card">
+                <div class="card-heading">
+                    <div class="heading-icon coral-icon">▤</div>
+                    <div>
+                        <h2>Verification Documents</h2>
+                        <p>Provide supporting documents for company verification.</p>
+                    </div>
+                </div>
+
+                <div class="document-list">
+                    <div class="document-item">
+                        <div class="document-icon">PDF</div>
+                        <div class="document-info">
+                            <h3>Business Registration Certificate</h3>
+                            <p>Upload your official registration document.</p>
+                            <span class="required-label">Required</span>
+                        </div>
+                        <label for="registration-file" class="upload-button">+ Upload</label>
+                        <input type="file" id="registration-file" accept=".pdf,.jpg,.jpeg,.png">
+                    </div>
+
+                    <div class="document-item">
+                        <div class="document-icon green-doc">PDF</div>
+                        <div class="document-info">
+                            <h3>Trade License</h3>
+                            <p>Upload your valid trade license.</p>
+                            <span class="required-label">Required</span>
+                        </div>
+                        <label for="license-file" class="upload-button">+ Upload</label>
+                        <input type="file" id="license-file" accept=".pdf,.jpg,.jpeg,.png">
+                    </div>
+
+                    <div class="document-item">
+                        <div class="document-icon purple-doc">PDF</div>
+                        <div class="document-info">
+                            <h3>Additional Company Document</h3>
+                            <p>Upload any supporting company document.</p>
+                            <span class="optional-label">Optional</span>
+                        </div>
+                        <label for="additional-file" class="upload-button">+ Upload</label>
+                        <input type="file" id="additional-file" accept=".pdf,.jpg,.jpeg,.png">
+                    </div>
+                </div>
+
+                <p class="upload-note">
+                    Accepted formats: PDF, JPG and PNG. Maximum file size: 5 MB.
+                </p>
+            </div>
+
+            <div class="form-actions">
+                <button type="reset" class="reset-button">Reset Form</button>
+                <button type="button" class="save-button">Save Changes</button>
+                <button type="button" class="submit-button">Submit for Verification →</button>
+            </div>
+
+        </div>
+
+        <aside class="profile-sidebar">
+
+            <div class="sidebar-card verification-card">
+                <div class="sidebar-card-heading">
+                    <h3>Verification Status</h3>
+                    <span class="question-icon">?</span>
+                </div>
+
+                <div class="verification-circle">
+                    <div class="circle-inner">
+                        <span>01</span>
+                        <small>STEP</small>
+                    </div>
+                </div>
+
+                <h2>Pending Review</h2>
+                <p>
+                    Your company profile needs to be completed and submitted
+                    before the University Internship Coordinator can review it.
+                </p>
+
+                <div class="status-timeline">
+                    <div class="timeline-item current">
+                        <span class="timeline-dot"></span>
+                        <div>
+                            <strong>Profile Creation</strong>
+                            <small>Complete company information</small>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <div>
+                            <strong>Submission</strong>
+                            <small>Submit for university review</small>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <div>
+                            <strong>University Verification</strong>
+                            <small>Coordinator reviews documents</small>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <div>
+                            <strong>Profile Approval</strong>
+                            <small>Company gets verified</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-card completion-card">
+                <div class="sidebar-card-heading">
+                    <h3>Profile Checklist</h3>
+                    <span class="check-icon">✓</span>
+                </div>
+
+                <p class="completion-description">
+                    Complete the following sections before submission.
+                </p>
+
+                <div class="checklist-item">
+                    <span class="check-empty"></span>
+                    <span>Basic Company Information</span>
+                </div>
+
+                <div class="checklist-item">
+                    <span class="check-empty"></span>
+                    <span>Contact Information</span>
+                </div>
+
+                <div class="checklist-item">
+                    <span class="check-empty"></span>
+                    <span>Registration Certificate</span>
+                </div>
+
+                <div class="checklist-item">
+                    <span class="check-empty"></span>
+                    <span>Trade License</span>
+                </div>
+            </div>
+
+            <div class="help-card">
+                <div class="help-icon">✦</div>
+                <h3>Need Assistance?</h3>
+                <p>
+                    Make sure all company information is accurate
+                    before submitting your profile.
+                </p>
+                <a href="mailto:support@internease.com">Contact Support →</a>
+            </div>
+
+        </aside>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>© 2026 InternEase. Company Representative Portal.</p>
+    <p>Powered by InternEase</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

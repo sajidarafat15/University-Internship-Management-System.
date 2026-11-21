@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supervisor Management | InternEase</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <input type="checkbox" id="menu-toggle">
+
+    <div class="header-left">
+        <label for="menu-toggle" class="menu-button">
+            <span class="menu-symbol"><i class="fa-solid fa-bars"></i></span>
+            <span>Menu</span>
+        </label>
+        <a href="../Dashboard/index.html" class="logo">Intern<span>Ease</span></a>
+    </div>
+
+    <div class="header-right">
+        <div class="company-info">
+            <span class="company-label">COMPANY ACCOUNT</span>
+            <span class="company-name">Ollyo</span>
+        </div>
+        <div class="profile-icon">O</div>
+    </div>
+
+    <label for="menu-toggle" class="menu-overlay"></label>
+
+    <nav class="popup-menu">
+        <div class="menu-heading">
+            <div>
+                <span class="menu-small">INTERNEASE PORTAL</span>
+                <h3>Navigation</h3>
+            </div>
+            <label for="menu-toggle" class="close-button"><i class="fa-solid fa-xmark"></i></label>
+        </div>
+
+        <a href="../Dashboard/index.html"><span class="nav-icon"><i class="fa-solid fa-house"></i></span> Dashboard</a>
+        <a href="../Company_Profile/index.html"><span class="nav-icon"><i class="fa-solid fa-building"></i></span> Company Profile & Verification</a>
+        <a href="../Internship_Management/index.html"><span class="nav-icon"><i class="fa-solid fa-briefcase"></i></span> Internship Management</a>
+        <a href="../Applications/index.html"><span class="nav-icon"><i class="fa-solid fa-file-lines"></i></span> Applications & CV Review</a>
+        <a href="../Candidate_Selection/index.html"><span class="nav-icon"><i class="fa-solid fa-user-check"></i></span> Candidate Selection</a>
+        <a href="../Offer_Letter/index.html"><span class="nav-icon"><i class="fa-solid fa-envelope"></i></span> Offer Letter Management</a>
+        <a href="../Supervisor_Management/index.html" class="active"><span class="nav-icon"><i class="fa-solid fa-user-tie"></i></span> Company Supervisor Management</a>
+
+        <div class="menu-footer">Company Representative Workspace</div>
+    </nav>
+</header>
+
+<main class="container">
+
+    <!-- WELCOME SECTION -->
+    <section class="welcome-section">
+        <div>
+            <p class="eyebrow">INTERNSHIP PROCESS / FINAL STAGE</p>
+            <h1>Supervisor Management</h1>
+            <p class="welcome-text">
+                Manage company supervisors and assign them to interns
+                who have completed their joining requirements.
+            </p>
+        </div>
+        <div class="welcome-icon"><i class="fa-solid fa-user-tie"></i></div>
+    </section>
+
+    <!-- STATISTICS -->
+    <section class="stats-grid">
+        <div class="stat-card blue">
+            <div class="stat-top">
+                <span>Total Supervisors</span>
+                <span class="stat-icon"><i class="fa-solid fa-users"></i></span>
+            </div>
+            <h2>04</h2>
+            <p>Registered company supervisors</p>
+        </div>
+
+        <div class="stat-card purple">
+            <div class="stat-top">
+                <span>Assigned Interns</span>
+                <span class="stat-icon"><i class="fa-solid fa-user-check"></i></span>
+            </div>
+            <h2>03</h2>
+            <p>Interns currently assigned</p>
+        </div>
+
+        <div class="stat-card orange">
+            <div class="stat-top">
+                <span>Available Supervisors</span>
+                <span class="stat-icon"><i class="fa-solid fa-user-clock"></i></span>
+            </div>
+            <h2>01</h2>
+            <p>Available for new assignments</p>
+        </div>
+
+        <div class="stat-card green">
+            <div class="stat-top">
+                <span>Completed Assignments</span>
+                <span class="stat-icon"><i class="fa-solid fa-award"></i></span>
+            </div>
+            <h2>02</h2>
+            <p>Previous internship assignments</p>
+        </div>
+    </section>
+
+    <section class="content-grid">
+
+        <div class="main-content">
+
+            <!-- SUPERVISOR DIRECTORY -->
+            <div class="section-card">
+                <div class="section-heading">
+                    <div>
+                        <p class="section-label">SUPERVISOR DIRECTORY</p>
+                        <h2>Company Supervisors</h2>
+                        <p class="section-description">
+                            View registered supervisors and their current workload.
+                        </p>
+                    </div>
+                    <span class="count-badge">4 Supervisors</span>
+                </div>
+
+                <div class="supervisor-list">
+                    <div class="supervisor-card">
+                        <div class="supervisor-avatar avatar-blue">T</div>
+                        <div class="supervisor-info">
+                            <h3>Tanvir Ahmed</h3>
+                            <p>Software Engineering Department</p>
+                            <span class="supervisor-email">Company Supervisor</span>
+                        </div>
+                        <div class="supervisor-workload">
+                            <strong>02</strong>
+                            <span>Assigned Interns</span>
+                        </div>
+                        <span class="availability available">Active</span>
+                    </div>
+
+                    <div class="supervisor-card">
+                        <div class="supervisor-avatar avatar-purple">A</div>
+                        <div class="supervisor-info">
+                            <h3>Supervisor 02</h3>
+                            <p>Design Department</p>
+                            <span class="supervisor-email">Company Supervisor</span>
+                        </div>
+                        <div class="supervisor-workload">
+                            <strong>01</strong>
+                            <span>Assigned Interns</span>
+                        </div>
+                        <span class="availability available">Active</span>
+                    </div>
+
+                    <div class="supervisor-card">
+                        <div class="supervisor-avatar avatar-orange">B</div>
+                        <div class="supervisor-info">
+                            <h3>Supervisor 03</h3>
+                            <p>Marketing Department</p>
+                            <span class="supervisor-email">Company Supervisor</span>
+                        </div>
+                        <div class="supervisor-workload">
+                            <strong>00</strong>
+                            <span>Assigned Interns</span>
+                        </div>
+                        <span class="availability available">Available</span>
+                    </div>
+
+                    <div class="supervisor-card">
+                        <div class="supervisor-avatar avatar-green">C</div>
+                        <div class="supervisor-info">
+                            <h3>Supervisor 04</h3>
+                            <p>Software Engineering Department</p>
+                            <span class="supervisor-email">Company Supervisor</span>
+                        </div>
+                        <div class="supervisor-workload">
+                            <strong>00</strong>
+                            <span>Assigned Interns</span>
+                        </div>
+                        <span class="availability inactive">Inactive</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NEW ASSIGNMENT -->
+            <div class="section-card">
+                <div class="section-heading">
+                    <div>
+                        <p class="section-label">NEW ASSIGNMENT</p>
+                        <h2>Assign Supervisor to Intern</h2>
+                        <p class="section-description">
+                            Select an eligible intern and assign a company supervisor.
+                        </p>
+                    </div>
+                    <span class="form-icon"><i class="fa-solid fa-pen-to-square"></i></span>
+                </div>
+
+                <form action="#" method="post">
+                    <div class="form-grid">
+
+                        <div class="form-group full-width">
+                            <label for="intern">Select Eligible Intern</label>
+                            <select id="intern" name="intern" required>
+                                <option value="">Choose an intern</option>
+                                <option value="tajwar">S.M Tajwar Tahmid</option>
+                            </select>
+                            <small class="field-note">
+                                Only students who have completed their offer
+                                and joining requirements should be assigned.
+                            </small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="supervisor">Select Supervisor</label>
+                            <select id="supervisor" name="supervisor" required>
+                                <option value="">Choose a supervisor</option>
+                                <option value="tanvir">Tanvir Ahmed</option>
+                                <option value="supervisor-03">Supervisor 03</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="department">Department</label>
+                            <select id="department" name="department" required>
+                                <option value="">Select department</option>
+                                <option>Software Engineering</option>
+                                <option>Design</option>
+                                <option>Marketing</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="position">Internship Position</label>
+                            <input type="text" id="position" name="position"
+                                value="Software Engineering Intern" readonly>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="start-date">Assignment Start Date</label>
+                            <input type="date" id="start-date" name="start_date" required>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="responsibilities">Additional Instructions</label>
+                            <textarea id="responsibilities" name="responsibilities"
+                                rows="4"
+                                placeholder="Add any instructions for the supervisor..."></textarea>
+                        </div>
+
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="reset" class="btn btn-reset">Clear Form</button>
+                        <button type="submit" class="btn btn-assign">Assign Supervisor</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- CURRENT ASSIGNMENTS -->
+            <div class="section-card">
+                <div class="section-heading">
+                    <div>
+                        <p class="section-label">CURRENT ASSIGNMENTS</p>
+                        <h2>Intern-Supervisor Assignments</h2>
+                        <p class="section-description">
+                            Review the supervisors assigned to current interns.
+                        </p>
+                    </div>
+                    <span class="count-badge">3 Assignments</span>
+                </div>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Intern</th>
+                                <th>Position</th>
+                                <th>Supervisor</th>
+                                <th>Start Date</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td><strong>S.M Tajwar Tahmid</strong></td>
+                                <td>Software Engineering</td>
+                                <td>Tanvir Ahmed</td>
+                                <td>01 Nov 2026</td>
+                                <td><span class="status assigned">Assigned</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Farhan Sadik Fahim</strong></td>
+                                <td>Software Engineering</td>
+                                <td>Tanvir Ahmed</td>
+                                <td>01 Nov 2026</td>
+                                <td><span class="status assigned">Assigned</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>MD. Sajid Arafat</strong></td>
+                                <td>UI/UX Design</td>
+                                <td>Supervisor 02</td>
+                                <td>05 Nov 2026</td>
+                                <td><span class="status assigned">Assigned</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <div class="side-card summary-card">
+                <div class="side-heading">
+                    <h3>Assignment Summary</h3>
+                    <span><i class="fa-solid fa-arrow-trend-up"></i></span>
+                </div>
+
+                <div class="summary-item">
+                    <div class="summary-icon blue-icon"><i class="fa-solid fa-users"></i></div>
+                    <div>
+                        <strong>04</strong>
+                        <p>Total Supervisors</p>
+                    </div>
+                </div>
+
+                <div class="summary-item">
+                    <div class="summary-icon purple-icon"><i class="fa-solid fa-user-check"></i></div>
+                    <div>
+                        <strong>03</strong>
+                        <p>Active Assignments</p>
+                    </div>
+                </div>
+
+                <div class="summary-item">
+                    <div class="summary-icon orange-icon"><i class="fa-solid fa-user-clock"></i></div>
+                    <div>
+                        <strong>01</strong>
+                        <p>Available Supervisors</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="side-card">
+                <div class="side-heading">
+                    <h3>Assignment Guidelines</h3>
+                    <span><i class="fa-solid fa-list-check"></i></span>
+                </div>
+
+                <div class="guideline-item">
+                    <span class="guideline-number">01</span>
+                    <p>Confirm that the student has accepted the offer letter.</p>
+                </div>
+
+                <div class="guideline-item">
+                    <span class="guideline-number">02</span>
+                    <p>Verify that all required joining documents are submitted.</p>
+                </div>
+
+                <div class="guideline-item">
+                    <span class="guideline-number">03</span>
+                    <p>Select a suitable supervisor based on the internship department.</p>
+                </div>
+
+                <div class="guideline-item">
+                    <span class="guideline-number">04</span>
+                    <p>Assign the supervisor and share the necessary internship information.</p>
+                </div>
+            </div>
+
+            <div class="next-step-card side-card">
+                <div class="next-icon"><i class="fa-solid fa-circle-check"></i></div>
+                <p class="section-label">PROCESS COMPLETED</p>
+                <h3>Internship Preparation Complete</h3>
+                <p>
+                    Once the supervisor is assigned, the company-side
+                    preparation process is complete. The supervisor can
+                    then handle the intern's supervision.
+                </p>
+                <a href="../Dashboard/index.html" class="next-button">
+                    Back to Dashboard <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="side-card help-card">
+                <div class="help-icon"><i class="fa-solid fa-circle-question"></i></div>
+                <h3>Need Assistance?</h3>
+                <p>
+                    Contact the university coordinator if you need help
+                    with the internship assignment process.
+                </p>
+                <a href="mailto:hr@ollyo.com">Contact Support <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+        </aside>
+    </section>
+
+    <!-- BOTTOM BANNER -->
+    <section class="bottom-banner">
+        <div>
+            <h2>Ready for the Internship Journey!</h2>
+            <p>
+                Your selected interns are ready to begin their professional
+                experience with company supervision.
+            </p>
+        </div>
+        <div class="banner-icon"><i class="fa-solid fa-star"></i></div>
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>© 2026 InternEase. All rights reserved.</p>
+    <p>Company Representative Portal · Ollyo</p>
+</footer>
+
+</body>
+</html>
