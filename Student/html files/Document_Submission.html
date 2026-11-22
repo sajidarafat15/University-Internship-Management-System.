@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css files/Student.css">
+    <title>Submit Documents</title>
+</head>
+<body>
+
+    <div class="sec-1">
+
+        <!-- Left Navigation Bar -->
+        <nav class="left-nav">
+            <div class="brand">Intern<span>Ease</span></div>
+            <a href="Student-Dashboard.html">DashBoard</a>
+            <a href="Search-Job.html">Find Internships</a>
+            <a href="Offer letter.html">Offer letters</a>
+            <a href="Document_Submission.html">Submit Documents</a>
+            <a href="Placement.html">My Internship</a>
+            <a href="Progress-Report.html">Progress Reports</a>
+            <a href="Login.html" class="logout" id="logoutLink">Logout</a>
+        </nav>
+
+        <section class="sec-1-sub">
+
+            <!-- Top banner with profile icon -->
+            <div class="image">
+                <div class="banner-title">
+                    <h1>Submit Documents</h1>
+                    <p>Upload the documents required for your internship</p>
+                </div>
+                <a href="Profile.html" class="profile-icon" title="My Profile">S</a>
+            </div>
+
+            <div class="content">
+                <div class="form-card">
+                    <div class="success-msg" id="docSuccess"></div>
+                    <form id="docForm">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="docType">Document Type</label>
+                                <select id="docType" required data-msg="Please select a document type.">
+                                    <option value="">-- Select --</option>
+                                    <option>Resume / CV</option>
+                                    <option>Academic Transcript</option>
+                                    <option>Student ID Copy</option>
+                                    <option>Acceptance Letter</option>
+                                    <option>Other</option>
+                                </select>
+                                <span class="error-msg"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="docFile">Upload File (PDF, max 2 MB)</label>
+                                <input type="file" id="docFile" required data-types="pdf" data-maxmb="2" data-msg="Please choose a file to upload.">
+                                <span class="error-msg"></span>
+                            </div>
+                            <div class="form-group full">
+                                <label for="docNote">Note (optional)</label>
+                                <textarea id="docNote" maxlength="200" placeholder="Anything the coordinator should know"></textarea>
+                                <span class="error-msg"></span>
+                            </div>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Submit Document</button>
+                            <button type="reset" class="btn btn-details">Clear</button>
+                        </div>
+                    </form>
+                </div>
+
+                <h2 class="section-title">Submitted Documents</h2>
+                <div class="table-wrap">
+                    <table>
+                        <thead><tr><th>Type</th><th>File</th><th>Size</th><th>Date</th><th>Status</th></tr></thead>
+                        <tbody id="docBody"></tbody>
+                    </table>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="../js files/student.js"></script>
+</body>
+</html>

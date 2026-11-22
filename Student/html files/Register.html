@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css files/StartPage.css">
+    <title>InternEase - Student Registration</title>
+</head>
+<body>
+    <div class="auth-page">
+
+        <!-- Left brand panel -->
+        <aside class="auth-side">
+            <a href="StartPage.html" class="brand">
+                <span class="system-logo">🎓</span>
+                <span>
+                    <b>Intern<span>Ease</span></b>
+                    <small>University Internship Management System</small>
+                </span>
+            </a>
+
+            <div>
+                <h1>Start your internship journey today</h1>
+                <p>Create your student account in a minute. You can finish the rest of your profile after you sign in.</p>
+                <ul class="auth-points">
+                    <li>✔ <span>Free for all university students</span></li>
+                    <li>✔ <span>Apply to internships with one click</span></li>
+                    <li>✔ <span>Everything stored in one place: offers, documents and reports</span></li>
+                </ul>
+            </div>
+
+            <small class="foot">&copy; 2026 InternEase</small>
+        </aside>
+
+        <!-- Registration form -->
+        <main class="auth-main">
+            <div class="auth-card wide">
+                <a href="StartPage.html" class="auth-back">&larr; Back to home</a>
+                <h2>Create your account</h2>
+                <p class="sub">Fill in your details to register as a student.</p>
+
+                <div class="form-alert" id="formAlert" role="alert"></div>
+
+                <form id="registerForm" novalidate>
+                    <div class="auth-grid">
+                        <div class="field full">
+                            <label for="regName">Full Name</label>
+                            <input type="text" id="regName" autocomplete="name" required minlength="3" data-pattern="^[A-Za-z .'-]+$" data-msg="Enter your full name (letters only).">
+                            <span class="field-msg"></span>
+                        </div>
+
+                        <div class="field">
+                            <label for="regId">Student ID</label>
+                            <input type="text" id="regId" inputmode="numeric" placeholder="e.g. 2022100123" required data-pattern="^[0-9]{7,10}$" data-msg="Student ID must be 7-10 digits.">
+                            <span class="field-msg"></span>
+                        </div>
+
+                        <div class="field">
+                            <label for="regDept">Department</label>
+                            <select id="regDept" required data-msg="Please select your department.">
+                                <option value="">-- Select --</option>
+                                <option value="CSE">Computer Science and Engineering</option>
+                                <option value="EEE">Electrical and Electronic Engineering</option>
+                                <option value="IPE">Industrial and Production Engineering</option>
+                            </select>
+                            <span class="field-msg"></span>
+                        </div>
+
+                        <div class="field">
+                            <label for="regEmail">University Email</label>
+                            <input type="email" id="regEmail" autocomplete="email" placeholder="you@university.edu" required data-pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" data-msg="Enter a valid email address.">
+                            <span class="field-msg"></span>
+                        </div>
+
+                        <div class="field">
+                            <label for="regPhone">Phone</label>
+                            <input type="tel" id="regPhone" autocomplete="tel" placeholder="01XXXXXXXXX" required data-pattern="^(\+8801|01)[3-9][0-9]{8}$" data-msg="Enter a valid Bangladeshi mobile number.">
+                            <span class="field-msg"></span>
+                        </div>
+
+                        <div class="field">
+                            <label for="regPass">Password</label>
+                            <div class="pw-wrap">
+                                <input type="password" id="regPass" autocomplete="new-password" required minlength="6" data-msg="Please enter a password.">
+                                <button type="button" class="pw-toggle" data-target="regPass">Show</button>
+                            </div>
+                            <span class="field-msg"></span>
+                        </div>
+
+                        <div class="field">
+                            <label for="regPass2">Confirm Password</label>
+                            <div class="pw-wrap">
+                                <input type="password" id="regPass2" autocomplete="new-password" required data-match="regPass" data-msg="Please confirm your password.">
+                                <button type="button" class="pw-toggle" data-target="regPass2">Show</button>
+                            </div>
+                            <span class="field-msg"></span>
+                        </div>
+
+                        <div class="field full">
+                            <label class="check" for="regTerms" style="margin:4px 0 0">
+                                <input type="checkbox" id="regTerms" required data-msg="You must agree to continue.">
+                                <span>I confirm that the information above is correct and I agree to the InternEase terms of use.</span>
+                            </label>
+                            <span class="field-msg"></span>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="auth-btn" style="margin-top:20px">Create Account</button>
+                </form>
+
+                <p class="auth-switch">Already have an account? <a href="Login.html">Login</a></p>
+            </div>
+        </main>
+
+    </div>
+
+    <script src="../js files/auth.js"></script>
+</body>
+</html>

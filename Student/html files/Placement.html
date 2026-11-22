@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css files/Student.css">
+    <title>My Internship</title>
+</head>
+<body>
+
+    <div class="sec-1">
+
+        <!-- Left Navigation Bar -->
+        <nav class="left-nav">
+            <div class="brand">Intern<span>Ease</span></div>
+            <a href="Student-Dashboard.html">DashBoard</a>
+            <a href="Search-Job.html">Find Internships</a>
+            <a href="Offer letter.html">Offer letters</a>
+            <a href="Document_Submission.html">Submit Documents</a>
+            <a href="Placement.html">My Internship</a>
+            <a href="Progress-Report.html">Progress Reports</a>
+            <a href="Login.html" class="logout" id="logoutLink">Logout</a>
+        </nav>
+
+        <section class="sec-1-sub">
+
+            <!-- Top banner with profile icon -->
+            <div class="image">
+                <div class="banner-title">
+                    <h1>My Internship</h1>
+                    <p>Your current internship placement</p>
+                </div>
+                <a href="Profile.html" class="profile-icon" title="My Profile">S</a>
+            </div>
+
+            <div class="content">
+                <div id="noPlacement" class="form-card">
+                    <h2 class="section-title" style="margin-top:0">No internship yet</h2>
+                    <p class="result-count" style="margin:0 0 16px">You have not accepted any offer. Once you accept an offer, your internship details will appear here.</p>
+                    <a href="Offer letter.html" class="btn btn-primary" style="text-decoration:none;display:inline-block">Go to Offer Letters</a>
+                </div>
+
+                <div id="placementView" style="display:none">
+                    <div class="info-grid">
+                        <div class="form-card">
+                            <h2 class="section-title" style="margin-top:0">Internship Details</h2>
+                            <div class="info-row"><span>Position</span><b id="plTitle">-</b></div>
+                            <div class="info-row"><span>Company</span><b id="plCompany">-</b></div>
+                            <div class="info-row"><span>Location</span><b id="plLocation">-</b></div>
+                            <div class="info-row"><span>Work Mode</span><b id="plMode">-</b></div>
+                            <div class="info-row"><span>Duration</span><b id="plDuration">-</b></div>
+                            <div class="info-row"><span>Stipend</span><b id="plStipend">-</b></div>
+                            <div class="info-row"><span>Start Date</span><b id="plStart">-</b></div>
+                            <div class="info-row"><span>End Date</span><b id="plEnd">-</b></div>
+                        </div>
+                        <div class="form-card">
+                            <h2 class="section-title" style="margin-top:0">Status &amp; Supervisors</h2>
+                            <div class="info-row"><span>Status</span><b id="plStatus">-</b></div>
+                            <div class="info-row"><span>Company Supervisor</span><b>To be assigned</b></div>
+                            <div class="info-row"><span>Faculty Supervisor</span><b>To be assigned</b></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="../js files/student.js"></script>
+</body>
+</html>

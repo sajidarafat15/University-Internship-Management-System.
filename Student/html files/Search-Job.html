@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css files/Student.css">
+    <title>Find Internships</title>
+</head>
+<body class="page-search">
+
+    <div class="sec-1">
+
+        <!-- Left Navigation Bar -->
+        <nav class="left-nav">
+            <div class="brand">Intern<span>Ease</span></div>
+            <a href="Student-Dashboard.html">DashBoard</a>
+            <a href="Search-Job.html">Find Internships</a>
+            <a href="Offer letter.html">Offer letters</a>
+            <a href="Document_Submission.html">Submit Documents</a>
+            <a href="Placement.html">My Internship</a>
+            <a href="Progress-Report.html">Progress Reports</a>
+            <a href="Login.html" class="logout" id="logoutLink">Logout</a>
+        </nav>
+
+        <section class="sec-1-sub">
+
+            <!-- Top banner with profile icon -->
+            <div class="image">
+                <div class="banner-title">
+                    <h1>Find Internships</h1>
+                    <p>Search and apply for available internship positions</p>
+                </div>
+                <a href="Profile.html" class="profile-icon" title="My Profile">S</a>
+            </div>
+
+            <div class="content">
+                <div class="search-area">
+                    <div class="Search-bar">
+                        <input type="text" id="searchInput" placeholder="Search by Job title, company, skills and keywords.." class="search-bar-size">
+                    </div>
+
+                    <form id="filterForm">
+                        <div class="search-nav">
+                            <select class="dropdown-1" id="filterDept">
+                                <option value="default">All Departments</option>
+                                <option value="CSE">Computer Science and Engineering</option>
+                                <option value="EEE">Electrical and Electronic Engineering</option>
+                                <option value="IPE">Industrial and Production Engineering</option>
+                            </select>
+
+                            <select class="dropdown-1" id="filterLoc">
+                                <option value="default">All Locations</option>
+                                <option value="bashundhara">Bashundhara</option>
+                                <option value="dhanmondi">Dhanmondi</option>
+                                <option value="gulshan">Gulshan</option>
+                                <option value="mirpur">Mirpur</option>
+                                <option value="uttara">Uttara</option>
+                            </select>
+
+                            <select class="dropdown-1" id="filterDur">
+                                <option value="default">All Duration</option>
+                                <option value="1-month">1 Month</option>
+                                <option value="2-months">2 Months</option>
+                                <option value="3-months">3 Months</option>
+                                <option value="6-months">6 Months</option>
+                            </select>
+
+                            <button type="reset" class="resetbtn">Clear Filters</button>
+                        </div>
+                    </form>
+                </div>
+
+                <p class="result-count" id="resultCount"></p>
+                
+                <!-- job card -->
+                <div class="application-grid" id="jobGrid">
+
+            <div class="application-card" data-id="j1" data-dept="CSE" data-location="gulshan" data-duration="3-months">
+                <div class="card-header">
+                    <div class="company-avatar avatar-one">O</div>
+                    <div>
+                        <h3>Web Developer Intern</h3>
+                        <p>Ollyo · Gulshan, Dhaka</p>
+                    </div>
+                </div>
+                <p class="job-description">Build and maintain web interfaces with the development team.</p>
+                <div class="tags"><span>Hybrid</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>3 Months</span></div>
+                <div class="card-info">
+                    <div>
+                        <span>Applied Date</span>
+                        <h4 class="applied-date">-</h4>
+                    </div>
+                    <div>
+                        <span>Application Status</span>
+                        <h4 class="pending-text status-text">Not Applied</h4>
+                    </div>
+                </div>
+                <div class="card-buttons">
+                    <button type="button" class="btn btn-details">Details</button>
+                    <button type="button" class="btn btn-Apply">Apply Now</button>
+                </div>
+                <div class="details-box">Work with senior developers on live projects. Weekly code reviews. Stipend: BDT 8,000/month. Department: CSE.</div>
+            </div>
+
+            <div class="application-card" data-id="j2" data-dept="CSE" data-location="mirpur" data-duration="2-months">
+                <div class="card-header">
+                    <div class="company-avatar avatar-two">B</div>
+                    <div>
+                        <h3>Network Support Intern</h3>
+                        <p>BrightNet Ltd · Mirpur, Dhaka</p>
+                    </div>
+                </div>
+                <p class="job-description">Assist the IT team with network setup, monitoring and troubleshooting.</p>
+                <div class="tags"><span>On-site</span><span>Networking</span><span>Linux</span><span>Troubleshooting</span><span>2 Months</span></div>
+                <div class="card-info">
+                    <div>
+                        <span>Applied Date</span>
+                        <h4 class="applied-date">-</h4>
+                    </div>
+                    <div>
+                        <span>Application Status</span>
+                        <h4 class="pending-text status-text">Not Applied</h4>
+                    </div>
+                </div>
+                <div class="card-buttons">
+                    <button type="button" class="btn btn-details">Details</button>
+                    <button type="button" class="btn btn-Apply">Apply Now</button>
+                </div>
+                <div class="details-box">Hands-on exposure to routers, switches and server rooms. Stipend: BDT 6,000/month. Department: CSE.</div>
+            </div>
+
+            <div class="application-card" data-id="j3" data-dept="EEE" data-location="uttara" data-duration="6-months">
+                <div class="card-header">
+                    <div class="company-avatar avatar-three">P</div>
+                    <div>
+                        <h3>Electrical Maintenance Intern</h3>
+                        <p>PowerGrid Solutions · Uttara, Dhaka</p>
+                    </div>
+                </div>
+                <p class="job-description">Support inspection and maintenance of electrical installations.</p>
+                <div class="tags"><span>On-site</span><span>Circuits</span><span>Safety</span><span>AutoCAD</span><span>6 Months</span></div>
+                <div class="card-info">
+                    <div>
+                        <span>Applied Date</span>
+                        <h4 class="applied-date">-</h4>
+                    </div>
+                    <div>
+                        <span>Application Status</span>
+                        <h4 class="pending-text status-text">Not Applied</h4>
+                    </div>
+                </div>
+                <div class="card-buttons">
+                    <button type="button" class="btn btn-details">Details</button>
+                    <button type="button" class="btn btn-Apply">Apply Now</button>
+                </div>
+                <div class="details-box">Site visits with engineers; safety training included. Stipend: BDT 10,000/month. Department: EEE.</div>
+            </div>
+
+            <div class="application-card" data-id="j4" data-dept="IPE" data-location="bashundhara" data-duration="3-months">
+                <div class="card-header">
+                    <div class="company-avatar avatar-one">A</div>
+                    <div>
+                        <h3>Production Planning Intern</h3>
+                        <p>Apex Manufacturing · Bashundhara, Dhaka</p>
+                    </div>
+                </div>
+                <p class="job-description">Help plan production schedules and track factory floor efficiency.</p>
+                <div class="tags"><span>On-site</span><span>Excel</span><span>Lean</span><span>Planning</span><span>3 Months</span></div>
+                <div class="card-info">
+                    <div>
+                        <span>Applied Date</span>
+                        <h4 class="applied-date">-</h4>
+                    </div>
+                    <div>
+                        <span>Application Status</span>
+                        <h4 class="pending-text status-text">Not Applied</h4>
+                    </div>
+                </div>
+                <div class="card-buttons">
+                    <button type="button" class="btn btn-details">Details</button>
+                    <button type="button" class="btn btn-Apply">Apply Now</button>
+                </div>
+                <div class="details-box">Work with the planning department on scheduling and reports. Stipend: BDT 7,000/month. Department: IPE.</div>
+            </div>
+
+            <div class="application-card" data-id="j5" data-dept="EEE" data-location="dhanmondi" data-duration="1-month">
+                <div class="card-header">
+                    <div class="company-avatar avatar-two">C</div>
+                    <div>
+                        <h3>Embedded Systems Intern</h3>
+                        <p>CircuitWorks · Dhanmondi, Dhaka</p>
+                    </div>
+                </div>
+                <p class="job-description">Prototype and test microcontroller-based devices.</p>
+                <div class="tags"><span>Hybrid</span><span>C</span><span>Arduino</span><span>PCB</span><span>1 Month</span></div>
+                <div class="card-info">
+                    <div>
+                        <span>Applied Date</span>
+                        <h4 class="applied-date">-</h4>
+                    </div>
+                    <div>
+                        <span>Application Status</span>
+                        <h4 class="pending-text status-text">Not Applied</h4>
+                    </div>
+                </div>
+                <div class="card-buttons">
+                    <button type="button" class="btn btn-details">Details</button>
+                    <button type="button" class="btn btn-Apply">Apply Now</button>
+                </div>
+                <div class="details-box">Short, project-based internship on IoT prototypes. Unpaid, certificate provided. Department: EEE.</div>
+            </div>
+
+            <div class="application-card" data-id="j6" data-dept="CSE" data-location="dhanmondi" data-duration="3-months">
+                <div class="card-header">
+                    <div class="company-avatar avatar-three">D</div>
+                    <div>
+                        <h3>Data Analyst Intern</h3>
+                        <p>DataNest · Dhanmondi, Dhaka</p>
+                    </div>
+                </div>
+                <p class="job-description">Clean datasets and build dashboards for client reports.</p>
+                <div class="tags"><span>Remote</span><span>Python</span><span>SQL</span><span>Excel</span><span>3 Months</span></div>
+                <div class="card-info">
+                    <div>
+                        <span>Applied Date</span>
+                        <h4 class="applied-date">-</h4>
+                    </div>
+                    <div>
+                        <span>Application Status</span>
+                        <h4 class="pending-text status-text">Not Applied</h4>
+                    </div>
+                </div>
+                <div class="card-buttons">
+                    <button type="button" class="btn btn-details">Details</button>
+                    <button type="button" class="btn btn-Apply">Apply Now</button>
+                </div>
+                <div class="details-box">Work with analysts on real client data. Stipend: BDT 9,000/month. Department: CSE.</div>
+            </div>
+
+                    <p class="empty-msg" id="emptyMsg">No internships match your search.</p>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="../js files/student.js"></script>
+</body>
+</html>

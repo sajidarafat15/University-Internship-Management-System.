@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css files/StartPage.css">
+    <title>InternEase - Student Login</title>
+</head>
+<body>
+    <div class="auth-page">
+
+        <!-- Left brand panel -->
+        <aside class="auth-side">
+            <a href="StartPage.html" class="brand">
+                <span class="system-logo">🎓</span>
+                <span>
+                    <b>Intern<span>Ease</span></b>
+                    <small>University Internship Management System</small>
+                </span>
+            </a>
+
+            <div>
+                <h1>Welcome back to your internship journey</h1>
+                <p>Pick up where you left off: check your offers, upload documents and send your weekly reports.</p>
+                <ul class="auth-points">
+                    <li>🔍 <span>Find and apply for internships that match your skills</span></li>
+                    <li>📄 <span>View and accept your offer letters online</span></li>
+                    <li>✅ <span>Track your coordinator's approval in real time</span></li>
+                </ul>
+            </div>
+
+            <small class="foot">&copy; 2026 InternEase</small>
+        </aside>
+
+        <!-- Login form -->
+        <main class="auth-main">
+            <div class="auth-card">
+                <a href="StartPage.html" class="auth-back">&larr; Back to home</a>
+                <h2>Student Login</h2>
+                <p class="sub">Sign in with your student ID and password.</p>
+
+                <div class="form-alert" id="formAlert" role="alert"></div>
+
+                <form id="loginForm" novalidate>
+                    <div class="field">
+                        <label for="loginId">Student ID</label>
+                        <input type="text" id="loginId" autocomplete="username" placeholder="Your student ID" required data-msg="Enter your student ID.">
+                        <span class="field-msg"></span>
+                    </div>
+
+                    <div class="field">
+                        <label for="loginPass">Password</label>
+                        <div class="pw-wrap">
+                            <input type="password" id="loginPass" autocomplete="current-password" placeholder="Your password" required data-msg="Enter your password.">
+                            <button type="button" class="pw-toggle" data-target="loginPass">Show</button>
+                        </div>
+                        <span class="field-msg"></span>
+                    </div>
+
+                    <button type="submit" class="auth-btn">Login</button>
+                </form>
+                <p class="auth-switch">New to InternEase? <a href="Register.html">Create an account</a></p>
+                <p class="auth-note">Forgot your password? Please contact your internship coordinator.</p>
+            </div>
+        </main>
+
+    </div>
+
+    <script src="../js files/auth.js"></script>
+</body>
+</html>

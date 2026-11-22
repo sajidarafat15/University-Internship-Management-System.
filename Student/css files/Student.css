@@ -1,0 +1,466 @@
+/* =========================================================
+   InternEase - Student Module (single shared stylesheet)
+   Theme: navy sidebar, brown banner, white cards, blue accent
+   ========================================================= */
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+}
+
+/* ---------- Layout ---------- */
+.sec-1 {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sec-1-sub {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+    position: relative;
+}
+
+.content {
+    padding: 22px 30px 40px;
+}
+
+/* ---------- Left navigation ---------- */
+.left-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 170px;
+    min-width: 170px;
+    padding: 20px 10px;
+    background-color: rgb(13, 13, 79);
+}
+
+.left-nav .brand {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.left-nav .brand span { color: #60a5fa; }
+
+.left-nav a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 6px 2px;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.left-nav a:hover { background-color: rgba(255, 255, 255, 0.15); }
+
+.left-nav a.active {
+    background-color: white;
+    color: rgb(13, 13, 79);
+    font-weight: 600;
+}
+
+/* ---------- Top banner ---------- */
+.image {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 200px;
+    width: 100%;
+    background-color: brown;
+    color: white;
+}
+
+.banner-title { padding: 30px; }
+.banner-title h1 { margin: 0 0 6px; font-size: 28px; }
+.banner-title p { margin: 0; font-size: 14px; opacity: 0.9; }
+
+.profile-icon {
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+    background-color: rgb(13, 13, 79);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px;
+}
+
+/* ---------- Headings ---------- */
+.section-title {
+    font-size: 18px;
+    margin: 28px 0 14px;
+    color: #1e293b;
+}
+
+/* ---------- Dashboard stat cards ---------- */
+.sec-1-sub-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 0;
+}
+
+.stat-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 3px 12px rgba(15, 23, 42, 0.05);
+}
+
+.stat-card h1 { font-size: 15px; margin: 0 0 10px; color: #64748b; font-weight: 600; }
+.stat-card .stat-number { font-size: 36px; font-weight: bold; margin: 0; }
+.stat-pending .stat-number { color: #d97706; }
+.stat-rejected .stat-number { color: #dc2626; }
+.stat-accepted .stat-number { color: #059669; }
+
+/* ---------- Search ---------- */
+.search-area {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 16px 20px;
+    box-shadow: 0 3px 12px rgba(15, 23, 42, 0.05);
+}
+
+.Search-bar { margin-bottom: 12px; }
+
+.search-bar-size {
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+    width: 100%;
+    max-width: 520px;
+    height: 34px;
+    padding: 0 10px;
+    outline: none;
+    font-size: 13px;
+}
+
+.search-bar-size:focus { border-color: #2563eb; }
+
+.search-nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+}
+
+.dropdown-1 {
+    height: 34px;
+    min-width: 200px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    padding: 0 8px;
+    background: white;
+}
+
+.resetbtn {
+    height: 34px;
+    width: 120px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.resetbtn:hover { background-color: #f1f5f9; }
+
+.result-count { font-size: 12px; color: #64748b; margin: 14px 0 0; }
+
+.empty-msg {
+    display: none;
+    text-align: center;
+    color: #64748b;
+    padding: 40px 0;
+    grid-column: 1 / -1;
+}
+
+/* ---------- Card grid ---------- */
+.application-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 18px;
+}
+
+.application-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 18px;
+    color: #1e293b;
+    box-shadow: 0 3px 12px rgba(15, 23, 42, 0.05);
+    transition: 0.3s;
+}
+
+.application-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.10);
+    border-color: #bfdbfe;
+}
+
+.card-header { display: flex; align-items: center; gap: 12px; }
+
+.company-avatar {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.avatar-one { background-color: #dbeafe; color: #2563eb; }
+.avatar-two { background-color: #ede9fe; color: #7c3aed; }
+.avatar-three { background-color: #ccfbf1; color: #0f766e; }
+
+.card-header h3 { font-size: 15px; color: #1e293b; margin: 0 0 5px; }
+.card-header p { font-size: 12px; color: #64748b; margin: 0; }
+
+.job-description {
+    font-size: 12px;
+    color: #64748b;
+    line-height: 1.6;
+    margin: 16px 0;
+    min-height: 38px;
+}
+
+.tags { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 18px; }
+
+.tags span {
+    background-color: #f1f5f9;
+    border: 1px solid #e2e8f0;
+    color: #475569;
+    padding: 5px 9px;
+    border-radius: 20px;
+    font-size: 11px;
+}
+
+.card-info {
+    border-top: 1px solid #e2e8f0;
+    padding-top: 14px;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.card-info span { font-size: 11px; color: #94a3b8; }
+.card-info h4 { font-size: 12px; color: #334155; margin: 6px 0 0; }
+
+.pending-text { color: #d97706 !important; }
+.shortlisted-text { color: #2563eb !important; }
+.accepted-text { color: #059669 !important; }
+.rejected-text { color: #dc2626 !important; }
+
+/* ---------- Buttons ---------- */
+.card-buttons { display: flex; gap: 9px; flex-wrap: wrap; }
+
+.btn {
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.btn-details { background-color: #eff6ff; color: #2563eb; border-color: #bfdbfe; }
+.btn-details:hover { background-color: #dbeafe; }
+
+.btn-Apply { background-color: #fef3c7; color: #b45309; border-color: #fde68a; }
+.btn-Apply:hover { background-color: #fde68a; }
+.btn-Apply:disabled { background-color: #d1fae5; color: #047857; border-color: #a7f3d0; cursor: default; }
+
+.btn-accept { background-color: #d1fae5; color: #047857; border-color: #a7f3d0; }
+.btn-accept:hover { background-color: #a7f3d0; }
+.btn-decline { background-color: #fee2e2; color: #b91c1c; border-color: #fecaca; }
+.btn-decline:hover { background-color: #fecaca; }
+
+.btn-primary {
+    background-color: rgb(13, 13, 79);
+    color: white;
+    padding: 10px 22px;
+    font-size: 13px;
+}
+
+.btn-primary:hover { background-color: #1e1e9c; }
+
+.btn-status { cursor: default; }
+.shortlisted-btn { background-color: #dbeafe; color: #1d4ed8; }
+.accepted-btn { background-color: #d1fae5; color: #047857; }
+.rejected-btn { background-color: #fee2e2; color: #b91c1c; }
+
+/* ---------- Details panel inside cards ---------- */
+.details-box {
+    display: none;
+    background: #f8fafc;
+    border: 1px dashed #cbd5e1;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 12px;
+    font-size: 12px;
+    color: #475569;
+    line-height: 1.6;
+}
+
+.details-box.open { display: block; }
+
+/* ---------- Forms ---------- */
+.form-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 24px;
+    box-shadow: 0 3px 12px rgba(15, 23, 42, 0.05);
+    max-width: 760px;
+}
+
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 20px; }
+.form-group { display: flex; flex-direction: column; }
+.form-group.full { grid-column: 1 / -1; }
+
+.form-group label { font-size: 13px; font-weight: 600; margin-bottom: 6px; color: #334155; }
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 9px 10px;
+    font-size: 13px;
+    font-family: inherit;
+    outline: none;
+    background: white;
+}
+
+.form-group textarea { min-height: 100px; resize: vertical; }
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus { border-color: #2563eb; }
+
+.form-group.invalid input,
+.form-group.invalid select,
+.form-group.invalid textarea { border-color: #dc2626; background: #fef2f2; }
+
+.error-msg { display: none; color: #dc2626; font-size: 11px; margin-top: 5px; }
+.form-group.invalid .error-msg { display: block; }
+
+.form-actions { margin-top: 20px; display: flex; gap: 10px; }
+
+.success-msg {
+    display: none;
+    background: #d1fae5;
+    color: #047857;
+    border: 1px solid #a7f3d0;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 13px;
+    margin-bottom: 16px;
+}
+
+.success-msg.show { display: block; }
+
+/* ---------- Tables ---------- */
+.table-wrap {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    overflow-x: auto;
+    box-shadow: 0 3px 12px rgba(15, 23, 42, 0.05);
+}
+
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th, td { text-align: left; padding: 12px 16px; border-bottom: 1px solid #e2e8f0; }
+th { background: #f1f5f9; color: #475569; font-size: 12px; text-transform: uppercase; letter-spacing: 0.3px; }
+tr:last-child td { border-bottom: none; }
+
+/* ---------- Placement / profile info ---------- */
+.info-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 13px;
+}
+
+.info-row:last-child { border-bottom: none; }
+.info-row span { color: #94a3b8; }
+.info-row b { color: #334155; text-align: right; }
+
+.progress-bar { background: #e2e8f0; border-radius: 20px; height: 10px; overflow: hidden; margin-top: 10px; }
+.progress-fill { background: #2563eb; height: 100%; border-radius: 20px; }
+
+.profile-head { display: flex; align-items: center; gap: 16px; margin-bottom: 20px; }
+.profile-avatar-lg {
+    width: 70px; height: 70px; border-radius: 50%;
+    background: rgb(13, 13, 79); color: white;
+    display: flex; justify-content: center; align-items: center;
+    font-size: 30px; font-weight: bold;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1100px) {
+    .application-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 800px) {
+    .sec-1 { flex-direction: column; }
+    .left-nav { width: 100%; flex-direction: row; flex-wrap: wrap; justify-content: center; }
+    .left-nav .brand { width: 100%; margin-bottom: 4px; }
+    .sec-1-sub-1, .info-grid, .form-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 700px) {
+    .application-grid { grid-template-columns: 1fr; }
+    .content { padding: 18px 16px 30px; }
+}
+
+
+/* Logout link at the bottom of the sidebar */
+.left-nav .logout {
+    margin-top: auto;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    text-align: center;
+}
+
+.btn-download { background-color: #2563eb; color: #ffffff; border-color: #2563eb; }
+.btn-download:hover { background-color: #1d4ed8; }
+
+/* ---------- Find Internships: banner + search stay on top, only the cards scroll ---------- */
+.page-search .sec-1 { height: 100vh; min-height: 0; }
+.page-search .sec-1-sub { height: 100vh; overflow: hidden; }
+.page-search .image { flex: none; height: 150px; }
+.page-search .content { flex: 1; min-height: 0; overflow-y: auto; padding-top: 0; }
+.page-search .search-area { position: sticky; top: 0; z-index: 5; margin-top: 16px; }
+.page-search .result-count { margin-top: 14px; }
+
+@media (max-width: 900px) {
+    .page-search .sec-1, .page-search .sec-1-sub { height: auto; overflow: visible; }
+    .page-search .content { overflow: visible; }
+    .page-search .search-area { position: static; }
+}
