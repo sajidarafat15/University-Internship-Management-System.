@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InternEase | Coordinator Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-icon">🎓</div>
+                <div class="brand-text">
+                    <h2>Intern<span>Ease</span></h2>
+                    <p>University Internship Portal</p>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="index.html" class="nav-link active"><span class="nav-icon">🏠</span><span>Dashboard</span></a>
+                <a href="../Company%20Verification/index.html" class="nav-link"><span
+                        class="nav-icon">🏢</span><span>Company Verification</span></a>
+                <a href="../Internship%20Postings/index.html" class="nav-link"><span
+                        class="nav-icon">📋</span><span>Internship Postings</span></a>
+                <a href="../Placement%20Approval/index.html" class="nav-link"><span
+                        class="nav-icon">✅</span><span>Placement Approval</span></a>
+                <a href="../Students/index.html" class="nav-link"><span
+                        class="nav-icon">👥</span><span>Students</span></a>
+                <a href="../Progress%20Reports/index.html" class="nav-link"><span
+                        class="nav-icon">📊</span><span>Progress Reports</span></a>
+                <a href="../Final%20Evaluation/index.html" class="nav-link"><span class="nav-icon">📝</span><span>Final
+                        Evaluation &amp; Grading</span></a>
+                <a href="../Administration%20%26%20Records/index.html" class="nav-link"><span
+                        class="nav-icon">🗂️</span><span>Administration &amp; Records</span></a>
+            </nav>
+        </aside>
+        <div class="main-area">
+            <header class="topbar">
+                <div class="topbar-search">
+                    <input type="search" placeholder="Search...">
+                </div>
+                <div class="topbar-right">
+                    <details class="notification-dropdown">
+                        <summary class="notification-button" aria-label="Notifications">
+                            🔔
+                            <span class="notification-count">3</span>
+                        </summary>
+                        <div class="notification-menu">
+                            <div class="notification-menu-header">
+                                <strong>Notifications</strong>
+                                <a href="../Administration%20%26%20Records/index.html">View All</a>
+                            </div>
+                            <a href="../Company%20Verification/company_details.html?request_id=CMP-026"
+                                class="notification-item">
+                                <span class="notification-item-icon notification-blue">🏢</span>
+                                <span class="notification-item-info">
+                                    <strong>New Company Verification Request</strong>
+                                    <span>Brain Station 23 PLC submitted a request.</span>
+                                    <small>10 minutes ago</small>
+                                </span>
+                            </a>
+                            <a href="../Placement%20Approval/placement_details.html?placement_id=PLA-026"
+                                class="notification-item">
+                                <span class="notification-item-icon notification-green">✅</span>
+                                <span class="notification-item-info">
+                                    <strong>New Placement Request</strong>
+                                    <span>S.M Tajwar Tahmid submitted a placement request.</span>
+                                    <small>1 hour ago</small>
+                                </span>
+                            </a>
+                            <a href="../Progress%20Reports/progress_details.html?report_id=PR-025"
+                                class="notification-item">
+                                <span class="notification-item-icon notification-purple">📊</span>
+                                <span class="notification-item-info">
+                                    <strong>Weekly Progress Report</strong>
+                                    <span>Farhan Sadik Fahim submitted a weekly report.</span>
+                                    <small>3 hours ago</small>
+                                </span>
+                            </a>
+                        </div>
+                    </details>
+                    <details class="profile-dropdown">
+                        <summary class="profile">
+                            <div class="profile-avatar">MTHR</div>
+                            <div class="profile-info">
+                                <strong>Mohammad Tahmedul Haque Rafid</strong>
+                                <span>Internship Coordinator</span>
+                            </div>
+                            <span class="profile-menu">⌄</span>
+                        </summary>
+                        <div class="profile-dropdown-menu">
+                            <a href="profile.html"><span>👤</span>My Profile</a>
+                            <a href="settings.html"><span>⚙️</span>Settings</a>
+                            <a href="../login.php" class="logout-option"><span>⇥</span>Logout</a>
+                        </div>
+                    </details>
+                </div>
+            </header>
+            <main class="main-content">
+                <section class="welcome-section">
+                    <div>
+                        <h1>Welcome, Mohammad Tahmedul Haque Rafid</h1>
+                        <p>University Internship Coordinator</p>
+                    </div>
+                    <div class="current-date">
+                        <span class="date-icon" aria-label="Calendar">📅</span>
+                        <span>Sunday, 01 November 2026</span>
+                    </div>
+                </section>
+                <section class="summary-cards">
+                    <article class="summary-card pending-companies">
+                        <div class="summary-icon">▦</div>
+                        <div class="summary-info">
+                            <h2>5</h2>
+                            <p>Open Company<br>Requests</p>
+                        </div>
+                        <a href="../Company%20Verification/index.html" class="card-arrow"
+                            aria-label="View company requests">›</a>
+                    </article>
+                    <article class="summary-card verified-companies">
+                        <div class="summary-icon">✓</div>
+                        <div class="summary-info">
+                            <h2>18</h2>
+                            <p>Approved Companies</p>
+                        </div>
+                        <a href="../Company%20Verification/index.html" class="card-arrow"
+                            aria-label="View approved companies">›</a>
+                    </article>
+                    <article class="summary-card pending-placements">
+                        <div class="summary-icon">♟</div>
+                        <div class="summary-info">
+                            <h2>12</h2>
+                            <p>Pending Placement<br>Approvals</p>
+                        </div>
+                        <a href="../Placement%20Approval/index.html" class="card-arrow"
+                            aria-label="View placement approvals">›</a>
+                    </article>
+                    <article class="summary-card pending-reports">
+                        <div class="summary-icon">▤</div>
+                        <div class="summary-info">
+                            <h2>27</h2>
+                            <p>Weekly Reports<br>to Review</p>
+                        </div>
+                        <a href="../Progress%20Reports/index.html" class="card-arrow"
+                            aria-label="View weekly reports">›</a>
+                    </article>
+                </section>
+                <section class="overview-grid">
+                    <div class="overview-main">
+                        <article class="panel company-requests">
+                            <div class="panel-header">
+                                <h2>Recent Company Verification Requests</h2>
+                                <a href="../Company%20Verification/index.html" class="view-all">View All</a>
+                            </div>
+                            <div class="table-responsive">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Company Name</th>
+                                            <th>Industry</th>
+                                            <th>Submitted On</th>
+                                            <th>Status</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Brain Station 23 PLC</td>
+                                            <td>Software Development</td>
+                                            <td>28 Oct 2026</td>
+                                            <td><span class="status status-pending">Pending</span></td>
+                                            <td><a href="../Company%20Verification/company_details.html?request_id=CMP-026"
+                                                    class="button button-view">View</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>BJIT Limited</td>
+                                            <td>IT Services</td>
+                                            <td>27 Oct 2026</td>
+                                            <td><span class="status status-pending">Pending</span></td>
+                                            <td><a href="../Company%20Verification/company_details.html?request_id=CMP-025"
+                                                    class="button button-view">View</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>DataSoft Systems Bangladesh Ltd.</td>
+                                            <td>Enterprise Software</td>
+                                            <td>26 Oct 2026</td>
+                                            <td><span class="status status-review">Under Review</span></td>
+                                            <td><a href="../Company%20Verification/company_details.html?request_id=CMP-024"
+                                                    class="button button-view">View</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </article>
+                        <article class="panel placement-requests">
+                            <div class="panel-header">
+                                <h2>Recent Placement Approval Requests</h2>
+                                <a href="../Placement%20Approval/index.html" class="view-all">View All</a>
+                            </div>
+                            <div class="table-responsive">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Student Name</th>
+                                            <th>Company</th>
+                                            <th>Position</th>
+                                            <th>Submitted On</th>
+                                            <th>Status</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>S.M Tajwar Tahmid</td>
+                                            <td>Brain Station 23 PLC</td>
+                                            <td>Software Intern</td>
+                                            <td>29 Oct 2026</td>
+                                            <td><span class="status status-pending">Pending</span></td>
+                                            <td><a href="../Placement%20Approval/index.html"
+                                                    class="button button-view">View</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Farhan Sadik Fahim</td>
+                                            <td>BJIT Limited</td>
+                                            <td>Software Intern</td>
+                                            <td>28 Oct 2026</td>
+                                            <td><span class="status status-pending">Pending</span></td>
+                                            <td><a href="../Placement%20Approval/index.html"
+                                                    class="button button-view">View</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>MD. Sajid Arafat</td>
+                                            <td>DataSoft Systems Bangladesh Ltd.</td>
+                                            <td>Web Developer Intern</td>
+                                            <td>27 Oct 2026</td>
+                                            <td><span class="status status-revision">Needs Revision</span></td>
+                                            <td><a href="../Placement%20Approval/index.html"
+                                                    class="button button-view">View</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="overview-side">
+                        <article class="panel deadlines-panel">
+                            <div class="panel-header">
+                                <h2>Upcoming Deadlines</h2>
+                                <a href="../Progress%20Reports/index.html" class="view-all">View All</a>
+                            </div>
+                            <div class="deadline-list">
+                                <div class="deadline-item">
+                                    <div class="deadline-icon deadline-red">▦</div>
+                                    <div class="deadline-info">
+                                        <strong>Review weekly reports</strong>
+                                    </div>
+                                    <time datetime="2026-10-31">31 Oct 2026</time>
+                                </div>
+                                <div class="deadline-item">
+                                    <div class="deadline-icon deadline-blue">▦</div>
+                                    <div class="deadline-info">
+                                        <strong>Final evaluation submissions</strong>
+                                    </div>
+                                    <time datetime="2026-11-05">05 Nov 2026</time>
+                                </div>
+                                <div class="deadline-item">
+                                    <div class="deadline-icon deadline-green">▦</div>
+                                    <div class="deadline-info">
+                                        <strong>Internship report deadline</strong>
+                                    </div>
+                                    <time datetime="2026-11-15">15 Nov 2026</time>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="panel activity-panel">
+                            <div class="panel-header">
+                                <h2>Recent Activity</h2>
+                                <a href="../Administration%20%26%20Records/index.html" class="view-all">View All</a>
+                            </div>
+                            <div class="activity-list">
+                                <div class="activity-item">
+                                    <div class="activity-icon activity-blue">▦</div>
+                                    <div class="activity-info">
+                                        <p><strong>Brain Station 23 PLC</strong> submitted a company verification
+                                            request.</p>
+                                        <span>10 minutes ago</span>
+                                    </div>
+                                </div>
+                                <div class="activity-item">
+                                    <div class="activity-icon activity-green">✓</div>
+                                    <div class="activity-info">
+                                        <p>A new placement request was submitted by <strong>S.M Tajwar Tahmid.</strong>
+                                        </p>
+                                        <span>1 hour ago</span>
+                                    </div>
+                                </div>
+                                <div class="activity-item">
+                                    <div class="activity-icon activity-purple">▤</div>
+                                    <div class="activity-info">
+                                        <p><strong>Farhan Sadik Fahim</strong> submitted a weekly progress report.</p>
+                                        <span>3 hours ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+                <footer class="dashboard-footer">
+                    <p>&copy; 2026 InternEase. University Internship Portal.</p>
+                    <p>University Internship Coordinator Panel</p>
+                </footer>
+            </main>
+        </div>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+
+</html>

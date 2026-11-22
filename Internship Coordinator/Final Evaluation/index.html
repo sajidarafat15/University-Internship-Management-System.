@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InternEase | Final Evaluation &amp; Grading</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-icon">🎓</div>
+                <div class="brand-text">
+                    <h2>Intern<span>Ease</span></h2>
+                    <p>University Internship Portal</p>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="../Dashboard/index.html" class="nav-link"><span
+                        class="nav-icon">🏠</span><span>Dashboard</span></a>
+                <a href="../Company%20Verification/index.html" class="nav-link"><span
+                        class="nav-icon">🏢</span><span>Company Verification</span></a>
+                <a href="../Internship%20Postings/index.html" class="nav-link"><span
+                        class="nav-icon">📋</span><span>Internship Postings</span></a>
+                <a href="../Placement%20Approval/index.html" class="nav-link"><span
+                        class="nav-icon">✅</span><span>Placement Approval</span></a>
+                <a href="../Students/index.html" class="nav-link"><span
+                        class="nav-icon">👥</span><span>Students</span></a>
+                <a href="../Progress%20Reports/index.html" class="nav-link"><span
+                        class="nav-icon">📊</span><span>Progress Reports</span></a>
+                <a href="index.html" class="nav-link active"><span class="nav-icon">📝</span><span>Final Evaluation
+                        &amp; Grading</span></a>
+                <a href="../Administration%20%26%20Records/index.html" class="nav-link"><span
+                        class="nav-icon">🗂️</span><span>Administration &amp; Records</span></a>
+            </nav>
+        </aside>
+        <div class="main-area">
+            <header class="topbar">
+                <div class="topbar-search">
+                    <input type="search" placeholder="Search...">
+                </div>
+                <div class="topbar-right">
+                    <details class="notification-dropdown">
+                        <summary class="notification-button" aria-label="Notifications">
+                            🔔
+                            <span class="notification-count">3</span>
+                        </summary>
+                        <div class="notification-menu">
+                            <div class="notification-menu-header">
+                                <strong>Notifications</strong>
+                                <a href="../Administration%20%26%20Records/index.html">View All</a>
+                            </div>
+                            <a href="../Company%20Verification/company_details.html?request_id=CMP-026"
+                                class="notification-item">
+                                <span class="notification-item-icon notification-blue">🏢</span>
+                                <span class="notification-item-info">
+                                    <strong>Company Verification Request</strong>
+                                    <span>Brain Station 23 PLC submitted a request.</span>
+                                    <small>10 minutes ago</small>
+                                </span>
+                            </a>
+                            <a href="../Placement%20Approval/placement_details.html?placement_id=PLA-026"
+                                class="notification-item">
+                                <span class="notification-item-icon notification-green">✅</span>
+                                <span class="notification-item-info">
+                                    <strong>Placement Approval Request</strong>
+                                    <span>S.M Tajwar Tahmid submitted a placement request.</span>
+                                    <small>1 hour ago</small>
+                                </span>
+                            </a>
+                            <a href="../Progress%20Reports/progress_details.html?report_id=PR-026"
+                                class="notification-item">
+                                <span class="notification-item-icon notification-purple">📊</span>
+                                <span class="notification-item-info">
+                                    <strong>Weekly Progress Report</strong>
+                                    <span>S.M Tajwar Tahmid submitted a weekly report.</span>
+                                    <small>3 hours ago</small>
+                                </span>
+                            </a>
+                        </div>
+                    </details>
+                    <details class="profile-dropdown">
+                        <summary class="profile">
+                            <div class="profile-avatar">MTHR</div>
+                            <div class="profile-info">
+                                <strong>Mohammad Tahmedul Haque Rafid</strong>
+                                <span>Internship Coordinator</span>
+                            </div>
+                            <span class="profile-menu">⌄</span>
+                        </summary>
+                        <div class="profile-dropdown-menu">
+                            <a href="../Dashboard/profile.html"><span>👤</span>My Profile</a>
+                            <a href="../Dashboard/settings.html"><span>⚙️</span>Settings</a>
+                            <a href="../login.php" class="logout-option"><span>⇥</span>Logout</a>
+                        </div>
+                    </details>
+                </div>
+            </header>
+            <main class="main-content">
+                <section class="welcome-section">
+                    <div>
+                        <h1>Final Evaluation &amp; Grading</h1>
+                    </div>
+                    <div class="current-date">
+                        <span class="date-icon" aria-label="Calendar">📅</span>
+                        <span>Sunday, 01 November 2026</span>
+                    </div>
+                </section>
+                <section class="summary-cards">
+                    <article class="summary-card pending-companies">
+                        <div class="summary-icon">📝</div>
+                        <div class="summary-info">
+                            <h2>3</h2>
+                            <p>Total Evaluation<br>Records</p>
+                        </div>
+                        <a href="#evaluation-list" class="card-arrow" aria-label="View all evaluations">›</a>
+                    </article>
+                    <article class="summary-card pending-placements">
+                        <div class="summary-icon">◷</div>
+                        <div class="summary-info">
+                            <h2>3</h2>
+                            <p>Pending<br>Evaluation</p>
+                        </div>
+                        <a href="#evaluation-list" class="card-arrow" aria-label="View pending evaluations">›</a>
+                    </article>
+                    <article class="summary-card verified-companies">
+                        <div class="summary-icon">✓</div>
+                        <div class="summary-info">
+                            <h2>0</h2>
+                            <p>Completed<br>Evaluations</p>
+                        </div>
+                        <a href="#evaluation-list" class="card-arrow" aria-label="View completed evaluations">›</a>
+                    </article>
+                    <article class="summary-card pending-reports">
+                        <div class="summary-icon">↻</div>
+                        <div class="summary-info">
+                            <h2>0</h2>
+                            <p>Returned for<br>Review</p>
+                        </div>
+                        <a href="#evaluation-list" class="card-arrow" aria-label="View returned evaluations">›</a>
+                    </article>
+                </section>
+                <section class="overview-grid">
+                    <div class="overview-main">
+                        <article class="panel evaluation-list-panel" id="evaluation-list">
+                            <div class="panel-header">
+                                <h2>Student Final Evaluations</h2>
+                            </div>
+                            <div class="evaluation-filters">
+                                <div class="filter-group search-group">
+                                    <label for="evaluation-search">Search Evaluations</label>
+                                    <input type="search" id="evaluation-search"
+                                        placeholder="Search by evaluation ID or student name">
+                                </div>
+                                <div class="filter-group">
+                                    <label for="evaluation-status">Status</label>
+                                    <select id="evaluation-status">
+                                        <option value="">All Statuses</option>
+                                        <option value="pending">Pending Evaluation</option>
+                                        <option value="completed">Completed</option>
+                                        <option value="returned">Returned for Review</option>
+                                    </select>
+                                </div>
+                                <div class="filter-group">
+                                    <label for="company-filter">Company</label>
+                                    <select id="company-filter">
+                                        <option value="">All Companies</option>
+                                        <option value="kaz">Kaz Software</option>
+                                        <option value="therap">Therap (BD) Ltd.</option>
+                                        <option value="cefalo">Cefalo Bangladesh</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Evaluation ID</th>
+                                            <th>Student Name</th>
+                                            <th>Student ID</th>
+                                            <th>Company</th>
+                                            <th>Internship Position</th>
+                                            <th>Status</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="evaluation-id">FE-026</td>
+                                            <td><strong>S.M Tajwar Tahmid</strong></td>
+                                            <td>23-54828-3</td>
+                                            <td>Kaz Software</td>
+                                            <td>Software Engineer Intern</td>
+                                            <td><span class="status status-pending">Pending Evaluation</span></td>
+                                            <td><a href="evaluation_details.html?evaluation_id=FE-026"
+                                                    class="button button-view">Review</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="evaluation-id">FE-025</td>
+                                            <td><strong>Farhan Sadik Fahim</strong></td>
+                                            <td>23-53663-3</td>
+                                            <td>Therap (BD) Ltd.</td>
+                                            <td>QA Engineer Intern</td>
+                                            <td><span class="status status-pending">Pending Evaluation</span></td>
+                                            <td><a href="evaluation_details.html?evaluation_id=FE-025"
+                                                    class="button button-view">Review</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="evaluation-id">FE-024</td>
+                                            <td><strong>MD. Sajid Arafat</strong></td>
+                                            <td>23-53526-3</td>
+                                            <td>Cefalo Bangladesh</td>
+                                            <td>Front-End Developer Intern</td>
+                                            <td><span class="status status-pending">Pending Evaluation</span></td>
+                                            <td><a href="evaluation_details.html?evaluation_id=FE-024"
+                                                    class="button button-view">Review</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="overview-side">
+                        <article class="panel evaluation-status-panel">
+                            <div class="panel-header">
+                                <h2>Evaluation Status</h2>
+                            </div>
+                            <div class="evaluation-status-item">
+                                <span class="evaluation-status-icon evaluation-yellow">◷</span>
+                                <strong>Pending Evaluation</strong>
+                                <span class="evaluation-status-count">3</span>
+                            </div>
+                            <div class="evaluation-status-item">
+                                <span class="evaluation-status-icon evaluation-green">✓</span>
+                                <strong>Completed</strong>
+                                <span class="evaluation-status-count">0</span>
+                            </div>
+                            <div class="evaluation-status-item">
+                                <span class="evaluation-status-icon evaluation-red">↻</span>
+                                <strong>Returned for Review</strong>
+                                <span class="evaluation-status-count">0</span>
+                            </div>
+                        </article>
+                        <article class="panel evaluation-process-panel">
+                            <div class="panel-header">
+                                <h2>Evaluation Process</h2>
+                            </div>
+                            <div class="process-item">
+                                <span class="process-number">01</span>
+                                <strong>Review Supervisor Assessment</strong>
+                            </div>
+                            <div class="process-item">
+                                <span class="process-number">02</span>
+                                <strong>Evaluate Internship Performance</strong>
+                            </div>
+                            <div class="process-item">
+                                <span class="process-number">03</span>
+                                <strong>Record Evaluation Result</strong>
+                            </div>
+                            <div class="process-item">
+                                <span class="process-number">04</span>
+                                <strong>Finalize Student Grade</strong>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+                <section class="evaluation-bottom-grid">
+                    <article class="panel evaluation-guidelines-panel">
+                        <div class="panel-header">
+                            <h2>Evaluation Guidelines</h2>
+                        </div>
+                        <div class="guideline-item">
+                            <span class="guideline-number">01</span>
+                            <strong>Review Company Supervisor Assessment</strong>
+                        </div>
+                        <div class="guideline-item">
+                            <span class="guideline-number">02</span>
+                            <strong>Review Student Progress Reports</strong>
+                        </div>
+                        <div class="guideline-item">
+                            <span class="guideline-number">03</span>
+                            <strong>Evaluate Overall Internship Performance</strong>
+                        </div>
+                        <div class="guideline-item">
+                            <span class="guideline-number">04</span>
+                            <strong>Record Final Evaluation Result</strong>
+                        </div>
+                    </article>
+                    <article class="panel evaluation-criteria-panel">
+                        <div class="panel-header">
+                            <h2>Evaluation Criteria &amp; Scoring</h2>
+                        </div>
+                        <div class="criteria-item">
+                            <strong>Work Performance</strong>
+                            <span>Not Recorded</span>
+                        </div>
+                        <div class="criteria-item">
+                            <strong>Technical Skills</strong>
+                            <span>Not Recorded</span>
+                        </div>
+                        <div class="criteria-item">
+                            <strong>Communication Skills</strong>
+                            <span>Not Recorded</span>
+                        </div>
+                        <div class="criteria-item">
+                            <strong>Professionalism</strong>
+                            <span>Not Recorded</span>
+                        </div>
+                        <div class="criteria-item">
+                            <strong>Overall Assessment</strong>
+                            <span>Not Recorded</span>
+                        </div>
+                    </article>
+                </section>
+                <footer class="dashboard-footer">
+                    <p>&copy; 2026 InternEase. University Internship Portal.</p>
+                    <p>University Internship Coordinator Panel</p>
+                </footer>
+            </main>
+        </div>
+    </div>
+    <script src="final_evaluation.js"></script>
+</body>
+
+</html>

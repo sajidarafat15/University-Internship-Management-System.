@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InternEase | Company Verification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-icon">🎓</div>
+                <div class="brand-text">
+                    <h2>Intern<span>Ease</span></h2>
+                    <p>University Internship Portal</p>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="../Dashboard/index.html" class="nav-link"><span
+                        class="nav-icon">🏠</span><span>Dashboard</span></a>
+                <a href="index.html" class="nav-link active"><span class="nav-icon">🏢</span><span>Company
+                        Verification</span></a>
+                <a href="../Internship%20Postings/index.html" class="nav-link"><span
+                        class="nav-icon">📋</span><span>Internship Postings</span></a>
+                <a href="../Placement%20Approval/index.html" class="nav-link"><span
+                        class="nav-icon">✅</span><span>Placement Approval</span></a>
+                <a href="../Students/index.html" class="nav-link"><span
+                        class="nav-icon">👥</span><span>Students</span></a>
+                <a href="../Progress%20Reports/index.html" class="nav-link"><span
+                        class="nav-icon">📊</span><span>Progress Reports</span></a>
+                <a href="../Final%20Evaluation/index.html" class="nav-link"><span class="nav-icon">📝</span><span>Final
+                        Evaluation &amp; Grading</span></a>
+                <a href="../Administration%20%26%20Records/index.html" class="nav-link"><span
+                        class="nav-icon">🗂️</span><span>Administration &amp; Records</span></a>
+            </nav>
+        </aside>
+        <div class="main-area">
+            <header class="topbar">
+                <div class="topbar-search">
+                    <input type="search" placeholder="Search...">
+                </div>
+                <div class="topbar-right">
+                    <details class="notification-dropdown">
+                        <summary class="notification-button" aria-label="Notifications">
+                            🔔
+                            <span class="notification-count">3</span>
+                        </summary>
+                        <div class="notification-menu">
+                            <div class="notification-menu-header">
+                                <strong>Notifications</strong>
+                                <a href="../Administration%20%26%20Records/index.html">View All</a>
+                            </div>
+                            <a href="company_details.html?request_id=CMP-026" class="notification-item">
+                                <span class="notification-item-icon notification-blue">🏢</span>
+                                <span class="notification-item-info">
+                                    <strong>Company Verification Request</strong>
+                                    <span>Brain Station 23 PLC submitted a request.</span>
+                                    <small>10 minutes ago</small>
+                                </span>
+                            </a>
+                            <a href="../Placement%20Approval/index.html" class="notification-item">
+                                <span class="notification-item-icon notification-green">✅</span>
+                                <span class="notification-item-info">
+                                    <strong>Placement Approval Request</strong>
+                                    <span>A student submitted a placement request.</span>
+                                    <small>1 hour ago</small>
+                                </span>
+                            </a>
+                            <a href="../Progress%20Reports/index.html" class="notification-item">
+                                <span class="notification-item-icon notification-purple">📊</span>
+                                <span class="notification-item-info">
+                                    <strong>Weekly Progress Report</strong>
+                                    <span>A student submitted a weekly report.</span>
+                                    <small>3 hours ago</small>
+                                </span>
+                            </a>
+                        </div>
+                    </details>
+                    <details class="profile-dropdown">
+                        <summary class="profile">
+                            <div class="profile-avatar">MTHR</div>
+                            <div class="profile-info">
+                                <strong>Mohammad Tahmedul Haque Rafid</strong>
+                                <span>Internship Coordinator</span>
+                            </div>
+                            <span class="profile-menu">⌄</span>
+                        </summary>
+                        <div class="profile-dropdown-menu">
+                            <a href="../Dashboard/profile.html"><span>👤</span>My Profile</a>
+                            <a href="../Dashboard/settings.html"><span>⚙️</span>Settings</a>
+                            <a href="../login.php" class="logout-option"><span>⇥</span>Logout</a>
+                        </div>
+                    </details>
+                </div>
+            </header>
+            <main class="main-content">
+                <section class="welcome-section">
+                    <div>
+                        <h1>Company Verification</h1>
+                        <p>Review company profiles and verify submitted documents before approval.</p>
+                    </div>
+                    <div class="current-date">
+                        <span class="date-icon" aria-label="Calendar">📅</span>
+                        <span>Sunday, 01 November 2026</span>
+                    </div>
+                </section>
+                <section class="summary-cards">
+                    <article class="summary-card pending-companies">
+                        <div class="summary-icon">◷</div>
+                        <div class="summary-info">
+                            <h2>4</h2>
+                            <p>Pending<br>Requests</p>
+                        </div>
+                        <a href="#company-list" class="card-arrow">›</a>
+                    </article>
+                    <article class="summary-card verified-companies">
+                        <div class="summary-icon">✓</div>
+                        <div class="summary-info">
+                            <h2>18</h2>
+                            <p>Approved<br>Companies</p>
+                        </div>
+                        <a href="#company-list" class="card-arrow">›</a>
+                    </article>
+                    <article class="summary-card pending-placements">
+                        <div class="summary-icon">◷</div>
+                        <div class="summary-info">
+                            <h2>1</h2>
+                            <p>Under<br>Review</p>
+                        </div>
+                        <a href="#company-list" class="card-arrow">›</a>
+                    </article>
+                    <article class="summary-card pending-reports">
+                        <div class="summary-icon">✕</div>
+                        <div class="summary-info">
+                            <h2>3</h2>
+                            <p>Rejected<br>Companies</p>
+                        </div>
+                        <a href="#company-list" class="card-arrow">›</a>
+                    </article>
+                </section>
+                <section class="overview-grid">
+                    <div class="overview-main">
+                        <article class="panel company-list-panel" id="company-list">
+                            <div class="panel-header">
+                                <h2>Company Verification Requests</h2>
+                            </div>
+                            <div class="company-filters">
+                                <div class="filter-group search-group">
+                                    <label for="company-search">Search Companies</label>
+                                    <input type="search" id="company-search"
+                                        placeholder="Search by company name or request ID">
+                                </div>
+                                <div class="filter-group">
+                                    <label for="company-status">Status</label>
+                                    <select id="company-status">
+                                        <option value="">All Statuses</option>
+                                        <option>Pending</option>
+                                        <option>Under Review</option>
+                                        <option>Approved</option>
+                                        <option>Rejected</option>
+                                    </select>
+                                </div>
+                                <div class="filter-group">
+                                    <label for="industry-filter">Industry</label>
+                                    <select id="industry-filter">
+                                        <option value="">All Industries</option>
+                                        <option>Software Development</option>
+                                        <option>IT Services</option>
+                                        <option>Enterprise Software</option>
+                                        <option>Technology Solutions</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Request ID</th>
+                                            <th>Company Name</th>
+                                            <th>Industry</th>
+                                            <th>Submitted On</th>
+                                            <th>Status</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="request-id">CMP-026</td>
+                                            <td><strong>Brain Station 23 PLC</strong></td>
+                                            <td>Software Development</td>
+                                            <td>28 Oct 2026</td>
+                                            <td><span class="status status-pending">Pending</span></td>
+                                            <td><a href="company_details.html?request_id=CMP-026"
+                                                    class="button button-view">Review</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="request-id">CMP-025</td>
+                                            <td><strong>BJIT Limited</strong></td>
+                                            <td>IT Services</td>
+                                            <td>27 Oct 2026</td>
+                                            <td><span class="status status-pending">Pending</span></td>
+                                            <td><a href="company_details.html?request_id=CMP-025"
+                                                    class="button button-view">Review</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="request-id">CMP-024</td>
+                                            <td><strong>DataSoft Systems Bangladesh Ltd.</strong></td>
+                                            <td>Enterprise Software</td>
+                                            <td>26 Oct 2026</td>
+                                            <td><span class="status status-review">Under Review</span></td>
+                                            <td><a href="company_details.html?request_id=CMP-024"
+                                                    class="button button-view">Review</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="request-id">CMP-023</td>
+                                            <td><strong>Enosis Solutions</strong></td>
+                                            <td>Software Development</td>
+                                            <td>25 Oct 2026</td>
+                                            <td><span class="status status-pending">Pending</span></td>
+                                            <td><a href="company_details.html?request_id=CMP-023"
+                                                    class="button button-view">Review</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="request-id">CMP-022</td>
+                                            <td><strong>Southtech Limited</strong></td>
+                                            <td>Technology Solutions</td>
+                                            <td>24 Oct 2026</td>
+                                            <td><span class="status status-pending">Pending</span></td>
+                                            <td><a href="company_details.html?request_id=CMP-022"
+                                                    class="button button-view">Review</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="overview-side">
+                        <article class="panel verification-checklist-panel">
+                            <div class="panel-header">
+                                <h2>Review Checklist</h2>
+                            </div>
+                            <div class="review-check-item">
+                                <span class="review-check-icon">01</span>
+                                <strong>Company Profile</strong>
+                            </div>
+                            <div class="review-check-item">
+                                <span class="review-check-icon">02</span>
+                                <strong>Registration Document</strong>
+                            </div>
+                            <div class="review-check-item">
+                                <span class="review-check-icon">03</span>
+                                <strong>Trade License</strong>
+                            </div>
+                            <div class="review-check-item">
+                                <span class="review-check-icon">04</span>
+                                <strong>Contact Information</strong>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+                <footer class="dashboard-footer">
+                    <p>&copy; 2026 InternEase. University Internship Portal.</p>
+                    <p>University Internship Coordinator Panel</p>
+                </footer>
+            </main>
+        </div>
+    </div>
+    <script src="company_verification.js"></script>
+</body>
+
+</html>

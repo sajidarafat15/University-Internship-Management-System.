@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InternEase | Students</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-icon">🎓</div>
+                <div class="brand-text">
+                    <h2>Intern<span>Ease</span></h2>
+                    <p>University Internship Portal</p>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="../Dashboard/index.html" class="nav-link"><span
+                        class="nav-icon">🏠</span><span>Dashboard</span></a>
+                <a href="../Company%20Verification/index.html" class="nav-link"><span
+                        class="nav-icon">🏢</span><span>Company Verification</span></a>
+                <a href="../Internship%20Postings/index.html" class="nav-link"><span
+                        class="nav-icon">📋</span><span>Internship Postings</span></a>
+                <a href="../Placement%20Approval/index.html" class="nav-link"><span
+                        class="nav-icon">✅</span><span>Placement Approval</span></a>
+                <a href="index.html" class="nav-link active"><span class="nav-icon">👥</span><span>Students</span></a>
+                <a href="../Progress%20Reports/index.html" class="nav-link"><span
+                        class="nav-icon">📊</span><span>Progress Reports</span></a>
+                <a href="../Final%20Evaluation/index.html" class="nav-link"><span class="nav-icon">📝</span><span>Final
+                        Evaluation &amp; Grading</span></a>
+                <a href="../Administration%20%26%20Records/index.html" class="nav-link"><span
+                        class="nav-icon">🗂️</span><span>Administration &amp; Records</span></a>
+            </nav>
+        </aside>
+        <div class="main-area">
+            <header class="topbar">
+                <div class="topbar-search">
+                    <input type="search" placeholder="Search...">
+                </div>
+                <div class="topbar-right">
+                    <details class="notification-dropdown">
+                        <summary class="notification-button" aria-label="Notifications">
+                            🔔
+                            <span class="notification-count">3</span>
+                        </summary>
+                        <div class="notification-menu">
+                            <div class="notification-menu-header">
+                                <strong>Notifications</strong>
+                                <a href="../Administration%20%26%20Records/index.html">View All</a>
+                            </div>
+                            <a href="../Company%20Verification/company_details.html?request_id=CMP-026"
+                                class="notification-item">
+                                <span class="notification-item-icon notification-blue">🏢</span>
+                                <span class="notification-item-info">
+                                    <strong>Company Verification Request</strong>
+                                    <span>Brain Station 23 PLC submitted a request.</span>
+                                    <small>10 minutes ago</small>
+                                </span>
+                            </a>
+                            <a href="../Placement%20Approval/placement_details.html?placement_id=PLA-026"
+                                class="notification-item">
+                                <span class="notification-item-icon notification-green">✅</span>
+                                <span class="notification-item-info">
+                                    <strong>Placement Approval Request</strong>
+                                    <span>S.M Tajwar Tahmid submitted a placement request.</span>
+                                    <small>1 hour ago</small>
+                                </span>
+                            </a>
+                            <a href="../Progress%20Reports/index.html" class="notification-item">
+                                <span class="notification-item-icon notification-purple">📊</span>
+                                <span class="notification-item-info">
+                                    <strong>Weekly Progress Report</strong>
+                                    <span>A student submitted a weekly report.</span>
+                                    <small>3 hours ago</small>
+                                </span>
+                            </a>
+                        </div>
+                    </details>
+                    <details class="profile-dropdown">
+                        <summary class="profile">
+                            <div class="profile-avatar">MTHR</div>
+                            <div class="profile-info">
+                                <strong>Mohammad Tahmedul Haque Rafid</strong>
+                                <span>Internship Coordinator</span>
+                            </div>
+                            <span class="profile-menu">⌄</span>
+                        </summary>
+                        <div class="profile-dropdown-menu">
+                            <a href="../Dashboard/profile.html"><span>👤</span>My Profile</a>
+                            <a href="../Dashboard/settings.html"><span>⚙️</span>Settings</a>
+                            <a href="../login.php" class="logout-option"><span>⇥</span>Logout</a>
+                        </div>
+                    </details>
+                </div>
+            </header>
+            <main class="main-content">
+                <section class="welcome-section">
+                    <div>
+                        <h1>Students</h1>
+                    </div>
+                    <div class="current-date">
+                        <span class="date-icon" aria-label="Calendar">📅</span>
+                        <span>Sunday, 01 November 2026</span>
+                    </div>
+                </section>
+                <section class="summary-cards">
+                    <article class="summary-card pending-companies">
+                        <div class="summary-icon">👥</div>
+                        <div class="summary-info">
+                            <h2>3</h2>
+                            <p>Total Student<br>Records</p>
+                        </div>
+                        <a href="#student-list" class="card-arrow" aria-label="View student records">›</a>
+                    </article>
+                    <article class="summary-card verified-companies">
+                        <div class="summary-icon">📋</div>
+                        <div class="summary-info">
+                            <h2>3</h2>
+                            <p>Placement<br>Requests</p>
+                        </div>
+                        <a href="#student-list" class="card-arrow" aria-label="View placement requests">›</a>
+                    </article>
+                    <article class="summary-card pending-placements">
+                        <div class="summary-icon">◷</div>
+                        <div class="summary-info">
+                            <h2>2</h2>
+                            <p>Pending<br>Placements</p>
+                        </div>
+                        <a href="#student-list" class="card-arrow" aria-label="View pending placements">›</a>
+                    </article>
+                    <article class="summary-card pending-reports">
+                        <div class="summary-icon">↻</div>
+                        <div class="summary-info">
+                            <h2>1</h2>
+                            <p>Needs<br>Correction</p>
+                        </div>
+                        <a href="#student-list" class="card-arrow" aria-label="View records needing correction">›</a>
+                    </article>
+                </section>
+                <section class="overview-grid">
+                    <div class="overview-main">
+                        <article class="panel student-list-panel" id="student-list">
+                            <div class="panel-header">
+                                <h2>Student Records</h2>
+                            </div>
+                            <div class="student-filters">
+                                <div class="filter-group search-group">
+                                    <label for="student-search">Search Students</label>
+                                    <input type="search" id="student-search" placeholder="Search by student name or ID">
+                                </div>
+                                <div class="filter-group">
+                                    <label for="placement-status">Placement Status</label>
+                                    <select id="placement-status">
+                                        <option value="">All Statuses</option>
+                                        <option value="pending">Pending Review</option>
+                                        <option value="correction">Needs Correction</option>
+                                        <option value="approved">Approved</option>
+                                    </select>
+                                </div>
+                                <div class="filter-group">
+                                    <label for="company-filter">Company</label>
+                                    <select id="company-filter">
+                                        <option value="">All Companies</option>
+                                        <option value="kaz">Kaz Software</option>
+                                        <option value="therap">Therap (BD) Ltd.</option>
+                                        <option value="cefalo">Cefalo Bangladesh</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Student Name</th>
+                                            <th>Student ID</th>
+                                            <th>Company</th>
+                                            <th>Internship Position</th>
+                                            <th>Placement ID</th>
+                                            <th>Placement Status</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>S.M Tajwar Tahmid</strong></td>
+                                            <td class="student-id">23-54828-3</td>
+                                            <td>Kaz Software</td>
+                                            <td>Software Engineer Intern</td>
+                                            <td class="placement-id">PLA-026</td>
+                                            <td><span class="status status-pending">Pending Review</span></td>
+                                            <td><a href="student_details.html?student_id=23-54828-3"
+                                                    class="button button-view">View</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Farhan Sadik Fahim</strong></td>
+                                            <td class="student-id">23-53663-3</td>
+                                            <td>Therap (BD) Ltd.</td>
+                                            <td>QA Engineer Intern</td>
+                                            <td class="placement-id">PLA-025</td>
+                                            <td><span class="status status-pending">Pending Review</span></td>
+                                            <td><a href="student_details.html?student_id=23-53663-3"
+                                                    class="button button-view">View</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>MD. Sajid Arafat</strong></td>
+                                            <td class="student-id">23-53526-3</td>
+                                            <td>Cefalo Bangladesh</td>
+                                            <td>Front-End Developer Intern</td>
+                                            <td class="placement-id">PLA-024</td>
+                                            <td><span class="status status-revision">Needs Correction</span></td>
+                                            <td><a href="student_details.html?student_id=23-53526-3"
+                                                    class="button button-view">View</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="overview-side">
+                        <article class="panel placement-status-panel">
+                            <div class="panel-header">
+                                <h2>Placement Status</h2>
+                            </div>
+                            <div class="placement-status-item">
+                                <span class="placement-status-icon placement-green">✓</span>
+                                <strong>Approved</strong>
+                                <span class="placement-status-count">0</span>
+                            </div>
+                            <div class="placement-status-item">
+                                <span class="placement-status-icon placement-yellow">◷</span>
+                                <strong>Pending Review</strong>
+                                <span class="placement-status-count">2</span>
+                            </div>
+                            <div class="placement-status-item">
+                                <span class="placement-status-icon placement-red">↻</span>
+                                <strong>Needs Correction</strong>
+                                <span class="placement-status-count">1</span>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+                <footer class="dashboard-footer">
+                    <p>&copy; 2026 InternEase. University Internship Portal.</p>
+                    <p>University Internship Coordinator Panel</p>
+                </footer>
+            </main>
+        </div>
+    </div>
+    <script src="students.js"></script>
+</body>
+
+</html>

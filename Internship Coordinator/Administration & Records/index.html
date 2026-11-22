@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InternEase | Administration &amp; Records</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-icon">🎓</div>
+                <div class="brand-text">
+                    <h2>Intern<span>Ease</span></h2>
+                    <p>University Internship Portal</p>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="../Dashboard/index.html" class="nav-link"><span
+                        class="nav-icon">🏠</span><span>Dashboard</span></a>
+                <a href="../Company%20Verification/index.html" class="nav-link"><span
+                        class="nav-icon">🏢</span><span>Company Verification</span></a>
+                <a href="../Internship%20Postings/index.html" class="nav-link"><span
+                        class="nav-icon">📋</span><span>Internship Postings</span></a>
+                <a href="../Placement%20Approval/index.html" class="nav-link"><span
+                        class="nav-icon">✅</span><span>Placement Approval</span></a>
+                <a href="../Students/index.html" class="nav-link"><span
+                        class="nav-icon">👥</span><span>Students</span></a>
+                <a href="../Progress%20Reports/index.html" class="nav-link"><span
+                        class="nav-icon">📊</span><span>Progress Reports</span></a>
+                <a href="../Final%20Evaluation/index.html" class="nav-link"><span class="nav-icon">📝</span><span>Final
+                        Evaluation &amp; Grading</span></a>
+                <a href="index.html" class="nav-link active"><span class="nav-icon">🗂️</span><span>Administration &amp;
+                        Records</span></a>
+            </nav>
+        </aside>
+        <div class="main-area">
+            <header class="topbar">
+                <div class="topbar-search">
+                    <input type="search" placeholder="Search...">
+                </div>
+                <div class="topbar-right">
+                    <details class="notification-dropdown">
+                        <summary class="notification-button" aria-label="Notifications">
+                            🔔
+                            <span class="notification-count">3</span>
+                        </summary>
+                        <div class="notification-menu">
+                            <div class="notification-menu-header">
+                                <strong>Notifications</strong>
+                                <a href="index.html">View All</a>
+                            </div>
+                            <a href="../Company%20Verification/company_details.html?request_id=CMP-026"
+                                class="notification-item">
+                                <span class="notification-item-icon notification-blue">🏢</span>
+                                <span class="notification-item-info">
+                                    <strong>Company Verification Request</strong>
+                                    <span>Brain Station 23 PLC submitted a request.</span>
+                                    <small>10 minutes ago</small>
+                                </span>
+                            </a>
+                            <a href="../Placement%20Approval/placement_details.html?placement_id=PLA-026"
+                                class="notification-item">
+                                <span class="notification-item-icon notification-green">✅</span>
+                                <span class="notification-item-info">
+                                    <strong>Placement Approval Request</strong>
+                                    <span>S.M Tajwar Tahmid submitted a placement request.</span>
+                                    <small>1 hour ago</small>
+                                </span>
+                            </a>
+                            <a href="../Progress%20Reports/progress_details.html?report_id=PR-026"
+                                class="notification-item">
+                                <span class="notification-item-icon notification-purple">📊</span>
+                                <span class="notification-item-info">
+                                    <strong>Weekly Progress Report</strong>
+                                    <span>S.M Tajwar Tahmid submitted a weekly report.</span>
+                                    <small>3 hours ago</small>
+                                </span>
+                            </a>
+                        </div>
+                    </details>
+                    <details class="profile-dropdown">
+                        <summary class="profile">
+                            <div class="profile-avatar">MTHR</div>
+                            <div class="profile-info">
+                                <strong>Mohammad Tahmedul Haque Rafid</strong>
+                                <span>Internship Coordinator</span>
+                            </div>
+                            <span class="profile-menu">⌄</span>
+                        </summary>
+                        <div class="profile-dropdown-menu">
+                            <a href="../Dashboard/profile.html"><span>👤</span>My Profile</a>
+                            <a href="../Dashboard/settings.html"><span>⚙️</span>Settings</a>
+                            <a href="../login.php" class="logout-option"><span>⇥</span>Logout</a>
+                        </div>
+                    </details>
+                </div>
+            </header>
+            <main class="main-content">
+                <section class="welcome-section">
+                    <div>
+                        <h1>Administration &amp; Records</h1>
+                        <p>Manage user accounts, student information and university internship records.</p>
+                    </div>
+                    <div class="current-date">
+                        <span class="date-icon" aria-label="Calendar">📅</span>
+                        <span>Sunday, 01 November 2026</span>
+                    </div>
+                </section>
+                <section class="summary-cards">
+                    <article class="summary-card pending-companies">
+                        <div class="summary-icon">👤</div>
+                        <div class="summary-info">
+                            <h2>4</h2>
+                            <p>Total User<br>Accounts</p>
+                        </div>
+                        <a href="#account-list" class="card-arrow" aria-label="View user accounts">›</a>
+                    </article>
+                    <article class="summary-card verified-companies">
+                        <div class="summary-icon">👥</div>
+                        <div class="summary-info">
+                            <h2>3</h2>
+                            <p>Student Profiles</p>
+                        </div>
+                        <a href="../Students/index.html" class="card-arrow" aria-label="View student profiles">›</a>
+                    </article>
+                    <article class="summary-card pending-placements">
+                        <div class="summary-icon">🏢</div>
+                        <div class="summary-info">
+                            <h2>8</h2>
+                            <p>Company Records</p>
+                        </div>
+                        <a href="../Company%20Verification/index.html" class="card-arrow"
+                            aria-label="View company records">›</a>
+                    </article>
+                    <article class="summary-card pending-reports">
+                        <div class="summary-icon">🗂️</div>
+                        <div class="summary-info">
+                            <h2>17</h2>
+                            <p>Pending Administrative<br>Reviews</p>
+                        </div>
+                        <a href="#system-records" class="card-arrow" aria-label="View pending records">›</a>
+                    </article>
+                </section>
+                <section class="overview-grid">
+                    <div class="overview-main">
+                        <article class="panel account-panel" id="account-list">
+                            <div class="panel-header">
+                                <h2>User Account Management</h2>
+                            </div>
+                            <div class="table-responsive">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Account Holder</th>
+                                            <th>Account Type</th>
+                                            <th>Related ID</th>
+                                            <th>Status</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="account-name"><strong>S.M Tajwar Tahmid</strong></div>
+                                            </td>
+                                            <td>Student</td>
+                                            <td>23-54828-3</td>
+                                            <td><span class="status status-active">Active</span></td>
+                                            <td><a href="../Students/student_details.html?student_id=23-54828-3"
+                                                    class="button button-view">View</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="account-name"><strong>Farhan Sadik Fahim</strong></div>
+                                            </td>
+                                            <td>Student</td>
+                                            <td>23-53663-3</td>
+                                            <td><span class="status status-active">Active</span></td>
+                                            <td><a href="../Students/student_details.html?student_id=23-53663-3"
+                                                    class="button button-view">View</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="account-name"><strong>MD. Sajid Arafat</strong></div>
+                                            </td>
+                                            <td>Student</td>
+                                            <td>23-53526-3</td>
+                                            <td><span class="status status-active">Active</span></td>
+                                            <td><a href="../Students/student_details.html?student_id=23-53526-3"
+                                                    class="button button-view">View</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="account-name"><strong>Tanvir Ahmed</strong></div>
+                                            </td>
+                                            <td>Company Supervisor</td>
+                                            <td>2601-2632-2</td>
+                                            <td><span class="status status-active">Active</span></td>
+                                            <td><a href="../Placement%20Approval/placement_details.html?placement_id=PLA-026"
+                                                    class="button button-view">View</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </article>
+                        <article class="panel records-panel" id="system-records">
+                            <div class="panel-header">
+                                <h2>Recent System Records</h2>
+                            </div>
+                            <div class="table-responsive">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Record ID</th>
+                                            <th>Record Type</th>
+                                            <th>Related User / Company</th>
+                                            <th>Last Activity</th>
+                                            <th>Status</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="record-id">CMP-026</td>
+                                            <td>Company Verification</td>
+                                            <td>Brain Station 23 PLC</td>
+                                            <td>28 Oct 2026</td>
+                                            <td><span class="status status-pending">Pending</span></td>
+                                            <td><a href="../Company%20Verification/company_details.html?request_id=CMP-026"
+                                                    class="button button-view">View</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="record-id">INT-026</td>
+                                            <td>Internship Posting</td>
+                                            <td>Kaz Software</td>
+                                            <td>26 Oct 2026</td>
+                                            <td><span class="status status-review">Published</span></td>
+                                            <td><a href="../Internship%20Postings/posting_details.html?posting_id=INT-026"
+                                                    class="button button-view">View</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="record-id">PLA-026</td>
+                                            <td>Placement Approval</td>
+                                            <td>S.M Tajwar Tahmid</td>
+                                            <td>29 Oct 2026</td>
+                                            <td><span class="status status-pending">Pending</span></td>
+                                            <td><a href="../Placement%20Approval/placement_details.html?placement_id=PLA-026"
+                                                    class="button button-view">View</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="record-id">PR-026</td>
+                                            <td>Progress Report</td>
+                                            <td>S.M Tajwar Tahmid</td>
+                                            <td>29 Oct 2026</td>
+                                            <td><span class="status status-pending">Pending</span></td>
+                                            <td><a href="../Progress%20Reports/progress_details.html?report_id=PR-026"
+                                                    class="button button-view">View</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="record-id">FE-026</td>
+                                            <td>Final Evaluation</td>
+                                            <td>S.M Tajwar Tahmid</td>
+                                            <td>15 Nov 2026</td>
+                                            <td><span class="status status-pending">Pending</span></td>
+                                            <td><a href="../Final%20Evaluation/evaluation_details.html?evaluation_id=FE-026"
+                                                    class="button button-view">View</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="overview-side">
+                        <article class="panel access-panel">
+                            <div class="panel-header">
+                                <h2>Administrative Access</h2>
+                            </div>
+                            <div class="access-profile">
+                                <div class="access-avatar">MTHR</div>
+                                <div>
+                                    <strong>Mohammad Tahmedul Haque Rafid</strong>
+                                    <span>Internship Coordinator</span>
+                                </div>
+                            </div>
+                            <div class="access-status">
+                                <span>Account Status</span>
+                                <strong class="status status-active">Active</strong>
+                            </div>
+                            <div class="access-status">
+                                <span>Account Type</span>
+                                <strong>Single Administrative Account</strong>
+                            </div>
+                            <div class="access-status">
+                                <span>Permission Level</span>
+                                <strong>Full Access</strong>
+                            </div>
+                            <div class="access-actions">
+                                <a href="../Dashboard/profile.html" class="profile-link">View Account Details</a>
+                                <a href="../Dashboard/settings.html" class="profile-link">View Account Settings</a>
+                            </div>
+                        </article>
+                        <article class="panel responsibilities-panel">
+                            <div class="panel-header">
+                                <h2>Main Responsibilities</h2>
+                            </div>
+                            <div class="responsibility-item">
+                                <span class="category-icon">🏢</span>
+                                <div>
+                                    <strong>Company Management</strong>
+                                    <p>Verify companies and manage internship postings.</p>
+                                </div>
+                            </div>
+                            <div class="responsibility-item">
+                                <span class="category-icon">👥</span>
+                                <div>
+                                    <strong>Student Management</strong>
+                                    <p>Manage student profiles and placement records.</p>
+                                </div>
+                            </div>
+                            <div class="responsibility-item">
+                                <span class="category-icon">📊</span>
+                                <div>
+                                    <strong>Progress Monitoring</strong>
+                                    <p>Review weekly progress and final evaluations.</p>
+                                </div>
+                            </div>
+                            <div class="responsibility-item">
+                                <span class="category-icon">🗂️</span>
+                                <div>
+                                    <strong>Record Management</strong>
+                                    <p>Maintain system users and university records.</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="panel categories-panel">
+                            <div class="panel-header">
+                                <h2>Record Categories</h2>
+                            </div>
+                            <div class="category-item">
+                                <span class="category-icon">👥</span>
+                                <div><strong>Student Records</strong></div>
+                                <a href="../Students/index.html" aria-label="View student records">›</a>
+                            </div>
+                            <div class="category-item">
+                                <span class="category-icon">🏢</span>
+                                <div><strong>Company Records</strong></div>
+                                <a href="../Company%20Verification/index.html" aria-label="View company records">›</a>
+                            </div>
+                            <div class="category-item">
+                                <span class="category-icon">📋</span>
+                                <div><strong>Internship Records</strong></div>
+                                <a href="../Internship%20Postings/index.html" aria-label="View internship records">›</a>
+                            </div>
+                            <div class="category-item">
+                                <span class="category-icon">📊</span>
+                                <div><strong>Progress Reports</strong></div>
+                                <a href="../Progress%20Reports/index.html" aria-label="View progress reports">›</a>
+                            </div>
+                            <div class="category-item">
+                                <span class="category-icon">📝</span>
+                                <div><strong>Evaluation Records</strong></div>
+                                <a href="../Final%20Evaluation/index.html" aria-label="View evaluation records">›</a>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+                <footer class="dashboard-footer">
+                    <p>&copy; 2026 InternEase. University Internship Portal.</p>
+                    <p>University Internship Coordinator Panel</p>
+                </footer>
+            </main>
+        </div>
+    </div>
+    <script src="administration_records.js"></script>
+</body>
+
+</html>
