@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InternEase | Progress Reports</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-icon">🎓</div>
+                <div class="brand-text">
+                    <h2>Intern<span>Ease</span></h2>
+                    <p>University Internship Portal</p>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="../Dashboard/index.html" class="nav-link"><span
+                        class="nav-icon">🏠</span><span>Dashboard</span></a>
+                <a href="../Company%20Verification/index.html" class="nav-link"><span
+                        class="nav-icon">🏢</span><span>Company Verification</span></a>
+                <a href="../Internship%20Postings/index.html" class="nav-link"><span
+                        class="nav-icon">📋</span><span>Internship Postings</span></a>
+                <a href="../Placement%20Approval/index.html" class="nav-link"><span
+                        class="nav-icon">✅</span><span>Placement Approval</span></a>
+                <a href="../Students/index.html" class="nav-link"><span
+                        class="nav-icon">👥</span><span>Students</span></a>
+                <a href="index.html" class="nav-link active"><span class="nav-icon">📊</span><span>Progress
+                        Reports</span></a>
+                <a href="../Final%20Evaluation/index.html" class="nav-link"><span class="nav-icon">📝</span><span>Final
+                        Evaluation &amp; Grading</span></a>
+                <a href="../Administration%20%26%20Records/index.html" class="nav-link"><span
+                        class="nav-icon">🗂️</span><span>Administration &amp; Records</span></a>
+            </nav>
+        </aside>
+        <div class="main-area">
+            <header class="topbar">
+                <div class="topbar-search">
+                    <input type="search" placeholder="Search...">
+                </div>
+                <div class="topbar-right">
+                    <details class="notification-dropdown">
+                        <summary class="notification-button" aria-label="Notifications">
+                            🔔
+                            <span class="notification-count">3</span>
+                        </summary>
+                        <div class="notification-menu">
+                            <div class="notification-menu-header">
+                                <strong>Notifications</strong>
+                                <a href="../Administration%20%26%20Records/index.html">View All</a>
+                            </div>
+                            <a href="../Company%20Verification/company_details.html?request_id=CMP-026"
+                                class="notification-item">
+                                <span class="notification-item-icon notification-blue">🏢</span>
+                                <span class="notification-item-info">
+                                    <strong>Company Verification Request</strong>
+                                    <span>Brain Station 23 PLC submitted a request.</span>
+                                    <small>10 minutes ago</small>
+                                </span>
+                            </a>
+                            <a href="../Placement%20Approval/placement_details.html?placement_id=PLA-026"
+                                class="notification-item">
+                                <span class="notification-item-icon notification-green">✅</span>
+                                <span class="notification-item-info">
+                                    <strong>Placement Approval Request</strong>
+                                    <span>S.M Tajwar Tahmid submitted a placement request.</span>
+                                    <small>1 hour ago</small>
+                                </span>
+                            </a>
+                            <a href="progress_details.html?report_id=PR-026" class="notification-item">
+                                <span class="notification-item-icon notification-purple">📊</span>
+                                <span class="notification-item-info">
+                                    <strong>Weekly Progress Report</strong>
+                                    <span>S.M Tajwar Tahmid submitted a weekly report.</span>
+                                    <small>3 hours ago</small>
+                                </span>
+                            </a>
+                        </div>
+                    </details>
+                    <details class="profile-dropdown">
+                        <summary class="profile">
+                            <div class="profile-avatar">MTHR</div>
+                            <div class="profile-info">
+                                <strong>Mohammad Tahmedul Haque Rafid</strong>
+                                <span>Internship Coordinator</span>
+                            </div>
+                            <span class="profile-menu">⌄</span>
+                        </summary>
+                        <div class="profile-dropdown-menu">
+                            <a href="../Dashboard/profile.html"><span>👤</span>My Profile</a>
+                            <a href="../Dashboard/settings.html"><span>⚙️</span>Settings</a>
+                            <a href="../login.php" class="logout-option"><span>⇥</span>Logout</a>
+                        </div>
+                    </details>
+                </div>
+            </header>
+            <main class="main-content">
+                <section class="welcome-section">
+                    <div>
+                        <h1>Progress Reports</h1>
+                        <p>Review student internship progress and check weekly report submissions.</p>
+                    </div>
+                    <div class="current-date">
+                        <span class="date-icon" aria-label="Calendar">📅</span>
+                        <span>Sunday, 01 November 2026</span>
+                    </div>
+                </section>
+                <section class="summary-cards">
+                    <article class="summary-card pending-companies">
+                        <div class="summary-icon">📊</div>
+                        <div class="summary-info">
+                            <h2>36</h2>
+                            <p>Total Reports</p>
+                        </div>
+                        <a href="#report-list" class="card-arrow" aria-label="View all reports">›</a>
+                    </article>
+                    <article class="summary-card pending-placements">
+                        <div class="summary-icon">◷</div>
+                        <div class="summary-info">
+                            <h2>27</h2>
+                            <p>Pending Review</p>
+                        </div>
+                        <a href="#report-list" class="card-arrow" aria-label="View pending reports">›</a>
+                    </article>
+                    <article class="summary-card verified-companies">
+                        <div class="summary-icon">✓</div>
+                        <div class="summary-info">
+                            <h2>7</h2>
+                            <p>Reviewed</p>
+                        </div>
+                        <a href="#report-list" class="card-arrow" aria-label="View reviewed reports">›</a>
+                    </article>
+                    <article class="summary-card pending-reports">
+                        <div class="summary-icon">↻</div>
+                        <div class="summary-info">
+                            <h2>2</h2>
+                            <p>Needs Revision</p>
+                        </div>
+                        <a href="#report-list" class="card-arrow" aria-label="View reports needing revision">›</a>
+                    </article>
+                </section>
+                <section class="overview-grid">
+                    <div class="overview-main">
+                        <article class="panel report-list-panel" id="report-list">
+                            <div class="panel-header">
+                                <h2>Submitted Progress Reports</h2>
+                            </div>
+                            <div class="report-filters">
+                                <div class="filter-group search-group">
+                                    <label for="report-search">Search Reports</label>
+                                    <input type="search" id="report-search"
+                                        placeholder="Search by report ID or student name">
+                                </div>
+                                <div class="filter-group">
+                                    <label for="report-status">Status</label>
+                                    <select id="report-status">
+                                        <option value="">All Statuses</option>
+                                        <option value="pending">Pending Review</option>
+                                        <option value="reviewed">Reviewed</option>
+                                        <option value="revision">Needs Revision</option>
+                                    </select>
+                                </div>
+                                <div class="filter-group">
+                                    <label for="report-week">Report Week</label>
+                                    <select id="report-week">
+                                        <option value="">All Weeks</option>
+                                        <option value="week-04">Week 04</option>
+                                        <option value="week-03">Week 03</option>
+                                        <option value="week-02">Week 02</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Report ID</th>
+                                            <th>Student</th>
+                                            <th>Student ID</th>
+                                            <th>Company</th>
+                                            <th>Reporting Period</th>
+                                            <th>Submitted On</th>
+                                            <th>Status</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="report-id">PR-026</td>
+                                            <td><strong>S.M Tajwar Tahmid</strong></td>
+                                            <td>23-54828-3</td>
+                                            <td>Kaz Software</td>
+                                            <td>Week 04</td>
+                                            <td>29 Oct 2026</td>
+                                            <td><span class="status status-pending">Pending Review</span></td>
+                                            <td><a href="progress_details.html?report_id=PR-026"
+                                                    class="button button-view">Review</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="report-id">PR-025</td>
+                                            <td><strong>Farhan Sadik Fahim</strong></td>
+                                            <td>23-53663-3</td>
+                                            <td>Therap (BD) Ltd.</td>
+                                            <td>Week 03</td>
+                                            <td>28 Oct 2026</td>
+                                            <td><span class="status status-pending">Pending Review</span></td>
+                                            <td><a href="progress_details.html?report_id=PR-025"
+                                                    class="button button-view">Review</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="report-id">PR-024</td>
+                                            <td><strong>MD. Sajid Arafat</strong></td>
+                                            <td>23-53526-3</td>
+                                            <td>Cefalo Bangladesh</td>
+                                            <td>Week 02</td>
+                                            <td>27 Oct 2026</td>
+                                            <td><span class="status status-revision">Needs Revision</span></td>
+                                            <td><a href="progress_details.html?report_id=PR-024"
+                                                    class="button button-view">Review</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="overview-side">
+                        <article class="panel report-status-panel">
+                            <div class="panel-header">
+                                <h2>Report Status Overview</h2>
+                            </div>
+                            <div class="report-status-item">
+                                <span class="report-status-icon report-green">✓</span>
+                                <strong>Reviewed</strong>
+                                <span class="report-status-count">7</span>
+                            </div>
+                            <div class="report-status-item">
+                                <span class="report-status-icon report-yellow">◷</span>
+                                <strong>Pending Review</strong>
+                                <span class="report-status-count">27</span>
+                            </div>
+                            <div class="report-status-item">
+                                <span class="report-status-icon report-red">↻</span>
+                                <strong>Needs Revision</strong>
+                                <span class="report-status-count">2</span>
+                            </div>
+                        </article>
+                        <article class="panel report-review-panel">
+                            <div class="panel-header">
+                                <h2>Report Review Areas</h2>
+                            </div>
+                            <div class="review-area-item">
+                                <span class="review-area-number">01</span>
+                                <strong>Work Completed</strong>
+                            </div>
+                            <div class="review-area-item">
+                                <span class="review-area-number">02</span>
+                                <strong>Skills Learned</strong>
+                            </div>
+                            <div class="review-area-item">
+                                <span class="review-area-number">03</span>
+                                <strong>Challenges</strong>
+                            </div>
+                            <div class="review-area-item">
+                                <span class="review-area-number">04</span>
+                                <strong>Next Week's Plan</strong>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+                <footer class="dashboard-footer">
+                    <p>&copy; 2026 InternEase. University Internship Portal.</p>
+                    <p>University Internship Coordinator Panel</p>
+                </footer>
+            </main>
+        </div>
+    </div>
+    <script src="progress_reports.js"></script>
+</body>
+
+</html>
